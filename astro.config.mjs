@@ -4,7 +4,6 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://tuong-uniqore.github.io',
-  base: '/altara',
+  site: 'https://altara.nguyenmanhtuong.vn',
   integrations: [tailwind(), react()]
 });
