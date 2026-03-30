@@ -1,0 +1,389 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+    title="ALTARA RESIDENCES - Đẳng Cấp Sống Thượng Lưu" 
+    description="Căn hộ biển cao cấp sỡ hữu lâu dài tại trung tâm thành phố Quy Nhơn."
+>
+	<main class="w-full bg-[#FAF9F6] text-[#2C2825] overflow-hidden selection:bg-[#9B6B43] selection:text-white">
+        <!-- Navigation Bar -->
+        <nav class="fixed top-0 w-full z-[80] px-6 lg:px-16 py-6 flex justify-between items-center mix-blend-difference text-white transition-all duration-300 border-b border-transparent" id="navbar">
+            <div class="font-serif text-2xl lg:text-3xl tracking-[0.2em] font-medium uppercase hover:scale-105 transition-transform cursor-pointer">
+                Altara
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-10 text-[11px] font-semibold tracking-[0.2em] uppercase items-center">
+                <a href="#tong-quan" class="hover:text-[#D4AF37] transition-colors relative group">
+                    Tổng quan
+                    <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#phoi-canh" class="hover:text-[#D4AF37] transition-colors relative group">
+                    Kiến trúc
+                    <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#vi-tri" class="hover:text-[#D4AF37] transition-colors relative group">
+                    Vị trí
+                    <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#bang-gia" class="hover:text-[#D4AF37] transition-colors relative group">
+                    Bảng giá
+                    <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <div class="w-[1px] h-4 bg-white/30 mx-2"></div>
+                <!-- Desktop Lang Switcher -->
+                <div class="flex gap-2 text-[10px] tracking-[0.1em]">
+                    <span class="font-bold text-[#D4AF37]">VI</span>
+                    <span class="text-white/50">|</span>
+                    <a href="#" class="text-white/50 hover:text-white transition-colors">EN</a>
+                </div>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="flex items-center gap-6">
+                <!-- Mobile Lang Switcher -->
+                <div class="flex md:hidden gap-2 text-[10px] tracking-[0.1em] mr-2">
+                    <span class="font-bold text-[#D4AF37]">VI</span>
+                    <span class="text-white/50">|</span>
+                    <a href="#" class="text-white/50 hover:text-white transition-colors">EN</a>
+                </div>
+                <!-- Hamburger Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-[5px] focus:outline-none group z-50">
+                    <span class="w-6 h-[1.5px] bg-white transition-all duration-300 origin-center group-[.active]:rotate-45 group-[.active]:translate-y-[6.5px]"></span>
+                    <span class="w-6 h-[1.5px] bg-white transition-all duration-300 group-[.active]:opacity-0"></span>
+                    <span class="w-6 h-[1.5px] bg-white transition-all duration-300 origin-center group-[.active]:-rotate-45 group-[.active]:-translate-y-[6.5px]"></span>
+                </button>
+                <button class="hidden md:block border border-white/50 px-6 py-3 text-[11px] font-semibold tracking-[0.15em] uppercase hover:bg-white hover:text-black transition-all duration-500 backdrop-blur-sm">
+                    Đăng Ký
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="fixed inset-0 bg-[#1A1817] z-[55] flex flex-col justify-center items-center opacity-0 pointer-events-none transition-all duration-500 min-h-[100svh]">
+            <div class="flex flex-col gap-10 text-center text-sm font-semibold tracking-[0.2em] uppercase">
+                <a href="#tong-quan" class="mobile-link text-white/50 hover:text-[#D4AF37] transition-colors">Tổng quan</a>
+                <a href="#phoi-canh" class="mobile-link text-white/50 hover:text-[#D4AF37] transition-colors">Kiến trúc</a>
+                <a href="#vi-tri" class="mobile-link text-white/50 hover:text-[#D4AF37] transition-colors">Vị trí</a>
+                <a href="#bang-gia" class="mobile-link text-white/50 hover:text-[#D4AF37] transition-colors">Bảng giá</a>
+                <button class="mt-8 border border-[#D4AF37] text-[#D4AF37] px-8 py-4 text-[11px] tracking-widest uppercase hover:bg-[#D4AF37] hover:text-[#1A1817] transition-colors">Đăng Ký Ngay</button>
+            </div>
+        </div>
+
+        <!-- Hero Section (Variant: Classic Museum) -->
+        <section id="tong-quan" class="relative w-full min-h-[100svh] flex flex-col justify-center items-center pt-32 pb-24 px-6 lg:px-16 overflow-hidden bg-[#EFECE6]">
+            <!-- Subtle background texture -->
+            <div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'); mix-blend-mode: multiply;"></div>
+            
+            <div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center text-center mt-12 pb-16">
+                <!-- Golden Accent -->
+                <div class="w-[2px] h-16 bg-[#D4AF37] mb-8 animate-[pulse_3s_ease-in-out_infinite]"></div>
+                
+                <h1 class="font-serif text-[#2C2825] text-5xl md:text-7xl lg:text-[6rem] leading-[1.1] font-medium tracking-tight mb-8 max-w-5xl selection:bg-[#2C2825] selection:text-[#EFECE6]">
+                    Tinh Hoa Nghệ Thuật <br />
+                    <span class="italic font-light text-[#8B5A2B]">Sống Trọn Vẹn</span>
+                </h1>
+                
+                <p class="text-[#595551] text-sm lg:text-base font-light leading-relaxed max-w-2xl mx-auto mb-12">
+                    Nơi những đường nét kiến trúc đương đại gặp gỡ tinh thần Á Đông sâu sắc. Altara không chỉ là nơi để ở, mà là kiệt tác độc bản giữa lòng Vịnh xanh Quy Nhơn.
+                </p>
+            </div>
+            
+            <!-- Majestic Center Feature Image -->
+            <div class="relative z-10 w-full max-w-6xl mx-auto aspect-[21/9] md:aspect-[5/2] overflow-hidden shadow-2xl group">
+                <img src="https://images.unsplash.com/photo-1628611225249-6c3c7c689552?q=80&w=2000" alt="Altara Majestic Pool" class="w-full h-full object-cover transform scale-[1.08] group-hover:scale-100 transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,1,0.5,1)]" />
+                <div class="absolute inset-0 border-[16px] border-[#FAF9F6] pointer-events-none mix-blend-overlay opacity-80"></div>
+                <!-- Play button aesthetic -->
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <button class="w-20 h-20 rounded-full border border-white/40 flex items-center justify-center bg-[#1A1817]/20 backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-auto hover:bg-[#D4AF37] hover:border-[#D4AF37] hover:text-[#1A1817] group-hover:shadow-[0_0_30px_rgba(212,175,55,0.4)]">
+                        <svg class="w-6 h-6 ml-2 text-white hover:text-inherit" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artistic Space Section -->
+        <section id="phoi-canh" class="py-32 lg:py-48 px-6 lg:px-16 bg-[#FAF9F6] relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+                    <div class="lg:col-span-5 relative">
+                        <p class="text-[#8B5A2B] tracking-[0.2em] text-xs font-bold uppercase mb-8">Kiến Trúc Độc Bản</p>
+                        <h2 class="font-serif text-4xl lg:text-6xl text-[#2C2825] leading-tight mb-10">
+                            Hơi Thở Nghệ Thuật<br />
+                            Trong Từng <span class="italic text-[#8B5A2B]">Điểm Chạm</span>
+                        </h2>
+                        <p class="text-[#595551] leading-relaxed font-light mb-12 text-lg">
+                            Thiết kế không gian tại Altara vượt qua khuôn khổ của một căn hộ thông thường. Đó là bản giao hưởng giữa vật liệu tự nhiên cao cấp và đường nét đương đại thanh lịch.
+                        </p>
+                        <div class="flex gap-8 border-t border-[#E5E0D8] pt-8">
+                            <div>
+                                <h4 class="font-serif text-3xl text-[#2C2825] mb-2">479</h4>
+                                <p class="text-[10px] uppercase tracking-[0.15em] text-[#8B5A2B] font-bold">Căn Hộ Giới Hạn</p>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-3xl text-[#2C2825] mb-2">100%</h4>
+                                <p class="text-[10px] uppercase tracking-[0.15em] text-[#8B5A2B] font-bold">View Biển Đẹp</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-7 relative">
+                        <div class="relative w-full aspect-[4/5] md:aspect-[3/2] lg:aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200" alt="Living Room" class="absolute right-0 top-0 w-4/5 h-4/5 object-cover shadow-[0_30px_60px_rgba(0,0,0,0.1)] grayscale hover:grayscale-0 transition-all duration-700" />
+                            <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=800" alt="Kitchen" class="absolute left-0 bottom-0 w-[55%] h-[55%] object-cover border-[12px] border-[#FAF9F6] shadow-xl grayscale hover:grayscale-0 transition-all duration-700" />
+                            <div class="absolute -right-8 bottom-1/4 w-32 h-[1px] bg-[#8B5A2B] hidden lg:block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="vi-tri" class="py-32 lg:py-48 px-6 lg:px-16 bg-[#2C2825] text-white">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="order-2 lg:order-1 relative group">
+                    <div class="absolute inset-0 bg-[#8B5A2B] translate-x-4 translate-y-4 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000" alt="Location" class="relative z-10 w-full aspect-square object-cover grayscale opacity-80 mix-blend-luminosity group-hover:opacity-100 group-hover:mix-blend-normal transition-all duration-700" />
+                    <!-- Map Pin -->
+                    <div class="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
+                        <div class="bg-[#1A1817]/80 backdrop-blur-md px-8 py-6 border border-white/20">
+                            <span class="font-serif text-2xl tracking-widest text-[#D4AF37]">76 Trần Hưng Đạo</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2">
+                    <p class="text-[#D4AF37] tracking-[0.2em] text-xs font-bold uppercase mb-8">Vị Trí Độc Tôn</p>
+                    <h2 class="font-serif text-4xl lg:text-6xl leading-tight mb-16">
+                        Giao Lộ <br/><span class="italic font-light text-white/70">Của Những Tinh Hoa</span>
+                    </h2>
+                    
+                    <ul class="space-y-12">
+                        <li class="relative pl-12 border-l border-white/20 hover:border-[#D4AF37] transition-colors pb-8">
+                            <span class="absolute left-0 top-0 w-2 h-2 bg-[#D4AF37] -translate-x-[5px]"></span>
+                            <h4 class="text-xl font-serif mb-3">1 Phút - Chạm Sóng Biển Lớn</h4>
+                            <p class="text-white/60 font-light text-sm leading-relaxed">Bước chân rời khỏi cánh cửa là không gian biển ngát xanh, tiếng sóng vỗ và bãi cát mịn màng của vịnh Quy Nhơn.</p>
+                        </li>
+                        <li class="relative pl-12 border-l border-white/20 hover:border-[#D4AF37] transition-colors pb-8">
+                            <span class="absolute left-0 top-0 w-2 h-2 bg-white/50 -translate-x-[5px]"></span>
+                            <h4 class="text-xl font-serif mb-3">3 Phút - Trung Tâm Hội Nghị Tỉnh</h4>
+                            <p class="text-white/60 font-light text-sm leading-relaxed">Giao điểm của văn hóa, sự kiện và nghệ thuật với quảng trường trung tâm rộng lớn.</p>
+                        </li>
+                        <li class="relative pl-12 border-l border-transparent">
+                            <span class="absolute left-0 top-0 w-2 h-2 bg-white/50 -translate-x-[5px]"></span>
+                            <h4 class="text-xl font-serif mb-3">5 Phút - Tiện Ích Toàn Diện</h4>
+                            <p class="text-white/60 font-light text-sm leading-relaxed">Kết nối nhanh chóng đến Bệnh viện tiêu chuẩn quốc tế, Siêu thị quy mô lớn và Hệ thống trường học danh tiếng.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="bang-gia" class="py-32 lg:py-48 px-6 lg:px-16 bg-[#EFECE6]">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-20 lg:mb-32">
+                    <p class="text-[#8B5A2B] tracking-[0.2em] text-xs font-bold uppercase mb-6">Đầu Tư Bền Vững</p>
+                    <h2 class="font-serif text-4xl lg:text-6xl text-[#2C2825] leading-tight flex flex-col gap-4">Tuyệt Tác Xứng Tầm <span class="italic font-light text-[#595551]">Giá Trị Thăng Hoa</span></h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Unit: 1BR -->
+                    <div class="bg-[#FAF9F6] p-10 lg:p-14 border border-[#E5E0D8] hover:shadow-2xl transition-all duration-500 group flex flex-col">
+                        <h3 class="font-serif text-3xl text-[#2C2825] mb-2">1 Phòng Ngủ</h3>
+                        <p class="text-[#8B5A2B] text-[10px] uppercase tracking-[0.2em] font-bold mb-10">Sở hữu vĩnh viễn</p>
+                        
+                        <div class="mb-12 font-serif text-[#2C2825]">
+                            <span class="text-lg italic opacity-70">Từ</span>
+                            <div class="text-5xl my-2">1.8 <span class="text-xl font-sans font-light">Tỷ</span></div>
+                        </div>
+
+                        <ul class="space-y-4 text-sm text-[#595551] font-light mb-12 border-t border-[#E5E0D8] pt-8 flex-1">
+                            <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 rounded-full bg-[#8B5A2B]"></span> Diện tích 45m²</li>
+                            <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 rounded-full bg-[#8B5A2B]"></span> Thiết kế mở tối giản</li>
+                            <li class="flex items-center gap-4 opacity-50"><span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span> Tầm nhìn thoáng đạt</li>
+                        </ul>
+
+                        <button class="w-full border border-[#2C2825] text-[#2C2825] py-4 text-[10px] font-bold uppercase tracking-[0.2em] group-hover:bg-[#2C2825] group-hover:text-white transition-colors">
+                            Nhận Báo Giá
+                        </button>
+                    </div>
+
+                    <!-- Unit: 2BR (Featured) -->
+                    <div class="bg-[#2C2825] p-10 lg:p-14 text-white shadow-[0_20px_40px_rgba(44,40,37,0.2)] hover:shadow-[0_30px_60px_rgba(44,40,37,0.4)] transition-all duration-500 scale-100 lg:scale-105 relative z-10 flex flex-col group">
+                        <div class="absolute top-0 left-0 w-full h-[3px] bg-[#D4AF37]"></div>
+                        <h3 class="font-serif text-3xl mb-2 text-white group-hover:text-[#D4AF37] transition-colors">2 Phòng Ngủ</h3>
+                        <p class="text-[#D4AF37] text-[10px] uppercase tracking-[0.2em] font-bold mb-10">Giới Tinh Hoa</p>
+                        
+                        <div class="mb-12 font-serif">
+                            <span class="text-lg italic opacity-70 text-white/80">Từ</span>
+                            <div class="text-5xl my-2 text-[#D4AF37]">2.5 <span class="text-xl font-sans font-light text-white">Tỷ</span></div>
+                        </div>
+
+                        <ul class="space-y-4 text-sm text-white/80 font-light mb-12 border-t border-white/20 pt-8 flex-1">
+                            <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span> Diện tích 75m²</li>
+                            <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span> Ban công kính cường lực</li>
+                            <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 rounded-full bg-[#D4AF37]"></span> View biển tuyệt mỹ</li>
+                            <li class="flex items-center gap-4 mt-6 text-[#D4AF37] font-semibold"><span class="w-[8px] h-[1px] bg-[#D4AF37]"></span> Sinh lời cam kết 8%/năm</li>
+                        </ul>
+
+                        <button class="w-full bg-[#D4AF37] text-[#2C2825] py-4 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white transition-colors">
+                            Tư Vấn Nhận Ưu Đãi
+                        </button>
+                    </div>
+
+                    <!-- Unit: Penthouse -->
+                    <div class="bg-[#FAF9F6] p-10 lg:p-14 border border-[#E5E0D8] hover:shadow-2xl transition-all duration-500 group flex flex-col mt-8 lg:mt-0">
+                        <h3 class="font-serif text-3xl text-[#2C2825] mb-2">Penthouse</h3>
+                        <p class="text-[#8B5A2B] text-[10px] uppercase tracking-[0.2em] font-bold mb-10">Phiên Bản Giới Hạn</p>
+                        
+                        <div class="mb-12 font-serif text-[#2C2825]">
+                            <span class="text-lg italic opacity-70">Suất nội bộ</span>
+                            <div class="text-3xl my-5 text-[#8B5A2B]">Liên Hệ Trực Tiếp</div>
+                        </div>
+
+                        <ul class="space-y-4 text-sm text-[#595551] font-light mb-12 border-t border-[#E5E0D8] pt-8 flex-1">
+                            <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 rounded-full bg-[#8B5A2B]"></span> Diện tích > 150m²</li>
+                            <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 rounded-full bg-[#8B5A2B]"></span> Bể bơi riêng & sân vườn</li>
+                            <li class="flex items-center gap-4"><span class="w-1.5 h-1.5 rounded-full bg-[#8B5A2B]"></span> Đặc quyền cá nhân VIP</li>
+                        </ul>
+
+                        <button class="w-full border border-[#2C2825] text-[#2C2825] py-4 text-[10px] font-bold uppercase tracking-[0.2em] group-hover:bg-[#2C2825] group-hover:text-white transition-colors">
+                            Thiết Lập Cuộc Hẹn
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#1A1817] text-white pt-24 pb-12 px-6 lg:px-16 border-t border-[#3A3530]">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20">
+                    <div class="lg:col-span-4">
+                        <h2 class="font-serif text-3xl tracking-[0.2em] uppercase mb-8 text-white">Altara</h2>
+                        <p class="text-white/50 font-light leading-relaxed text-sm lg:w-3/4">
+                            Kiến tạo chuẩn mực sống thượng lưu tại vịnh biển Quy Nhơn. Nơi hội tụ tinh hoa trải nghiệm với phong cách sống đẳng cấp mang đậm dấu ấn cá nhân.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-3">
+                        <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#D4AF37] mb-8">Kết Nối Với Chúng Tôi</h4>
+                        <ul class="space-y-5 text-sm text-white/70 font-light">
+                            <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">T.</span> 0948 385 566</li>
+                            <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">E.</span> tuongnm@gmail.com</li>
+                            <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">A.</span> 76 Trần Hưng Đạo, Quy Nhơn</li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-5 flex flex-col items-start lg:items-end">
+                        <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#D4AF37] mb-8">Nhận Thư Mời VIP</h4>
+                        <div class="flex w-full max-w-sm border-b border-white/30 pb-3 hover:border-white transition-colors focus-within:border-white">
+                            <input type="email" placeholder="Nhập email của bạn" class="bg-transparent border-none outline-none text-white placeholder-white/30 text-sm flex-1 font-light" />
+                            <button class="text-[10px] font-bold uppercase tracking-[0.2em] hover:text-[#D4AF37] transition-colors ml-4">Gửi</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-white/40 font-light tracking-[0.1em] gap-6">
+                    <p>&copy; 2026 ALTARA RESIDENCES. ALL RIGHTS RESERVED.</p>
+                    <div class="flex gap-8">
+                        <a href="#" class="hover:text-white transition-colors">CHÍNH SÁCH BẢO MẬT</a>
+                        <a href="#" class="hover:text-white transition-colors">ĐIỀU KHOẢN DỊCH VỤ</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn" aria-label="Scroll to top" class="fixed right-6 lg:right-12 bottom-6 lg:bottom-12 z-[100] bg-[#D4AF37] text-[#1A1817] w-12 h-12 flex items-center justify-center opacity-0 pointer-events-none translate-y-4 transition-all duration-500 hover:bg-white hover:scale-110 shadow-[0_10px_30px_rgba(212,175,55,0.3)]">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M12 4v16m0-16l-6 6m6-6l6 6"></path>
+            </svg>
+        </button>
+	</main>
+</Layout>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // --- Mobile Menu Logic ---
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const mobileLinks = document.querySelectorAll(".mobile-link");
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener("click", () => {
+                mobileMenuBtn.classList.toggle("active");
+                if (mobileMenuBtn.classList.contains("active")) {
+                    mobileMenu.classList.remove("opacity-0", "pointer-events-none");
+                    mobileMenu.classList.add("opacity-100", "pointer-events-auto");
+                    document.body.style.overflow = "hidden"; // Prevent scrolling
+                } else {
+                    mobileMenu.classList.add("opacity-0", "pointer-events-none");
+                    mobileMenu.classList.remove("opacity-100", "pointer-events-auto");
+                    document.body.style.overflow = "auto";
+                }
+            });
+
+            // Close menu when clicking a link
+            mobileLinks.forEach(link => {
+                link.addEventListener("click", () => {
+                    mobileMenuBtn.classList.remove("active");
+                    mobileMenu.classList.add("opacity-0", "pointer-events-none");
+                    mobileMenu.classList.remove("opacity-100", "pointer-events-auto");
+                    document.body.style.overflow = "auto";
+                });
+            });
+        }
+
+        // --- Scroll to Top Logic ---
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        
+        if (scrollToTopBtn) {
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 600) {
+                    scrollToTopBtn.classList.remove("opacity-0", "pointer-events-none", "translate-y-4");
+                    scrollToTopBtn.classList.add("opacity-100", "pointer-events-auto", "translate-y-0");
+                } else {
+                    scrollToTopBtn.classList.add("opacity-0", "pointer-events-none", "translate-y-4");
+                    scrollToTopBtn.classList.remove("opacity-100", "pointer-events-auto", "translate-y-0");
+                }
+            });
+
+            scrollToTopBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        }
+
+        // --- Smooth Scroll without Hash in URL ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    @keyframes slowZoom {
+        0% { transform: scale(1.0); }
+        100% { transform: scale(1.1); }
+    }
+</style>

@@ -1,0 +1,698 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+    title="ALTARA RESIDENCES - The Pinnacle of Luxury Living" 
+    description="Premium freehold beachfront residences in the heart of Quy Nhon city."
+>
+	<main class="w-full bg-[#FAF9F6] text-[#2C2825] overflow-hidden selection:bg-[#9B6B43] selection:text-white">
+        <!-- Navigation Bar -->
+        <nav class="fixed top-0 w-full z-[80] px-6 lg:px-16 py-6 flex justify-between items-center text-white transition-all duration-[400ms] border-b border-transparent" id="navbar">
+            <div class="flex flex-col hover:scale-105 transition-transform cursor-pointer">
+                <div class="font-serif text-2xl lg:text-3xl tracking-[0.2em] font-medium uppercase text-center lg:text-left">
+                    Altara
+                </div>
+                <div class="text-[8px] lg:text-[9px] font-bold tracking-[0.25em] uppercase text-[#D4AF37] mt-1 lg:mt-0.5 text-center lg:text-left">
+                    Premium Residences
+                </div>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-10 text-[11px] font-semibold tracking-[0.2em] uppercase items-center">
+                <a href="#tong-quan" class="hover:text-[#D4AF37] transition-colors relative group">
+                    Overview
+                    <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#phoi-canh" class="hover:text-[#D4AF37] transition-colors relative group">
+                    Architecture
+                    <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#vi-tri" class="hover:text-[#D4AF37] transition-colors relative group">
+                    Location
+                    <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#bang-gia" class="hover:text-[#D4AF37] transition-colors relative group">
+                    Pricing
+                    <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+            </div>
+
+            <!-- Right Actions -->
+            <div class="flex items-center gap-4 lg:gap-6">
+                <!-- Unified Lang Pill -->
+                <div class="flex items-center gap-3 bg-white/10 border border-white/20 backdrop-blur-md px-3 md:px-4 py-1.5 md:py-2 rounded-full text-[9px] md:text-[10px] tracking-widest lang-pill transition-colors z-50">
+                    <a href="/" class="text-white hover:text-[#D4AF37] opacity-60 hover:opacity-100 transition-all lang-en">VI</a>
+                    <span class="w-[1px] h-3 bg-white/30 div-line"></span>
+                    <span class="font-bold text-[#D4AF37]">EN</span>
+                </div>
+                <!-- Hamburger Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-[5px] focus:outline-none group z-50">
+                    <span class="w-6 h-[1.5px] bg-white transition-all duration-300 origin-center group-[.active]:rotate-45 group-[.active]:translate-y-[6.5px]"></span>
+                    <span class="w-6 h-[1.5px] bg-white transition-all duration-300 group-[.active]:opacity-0"></span>
+                    <span class="w-6 h-[1.5px] bg-white transition-all duration-300 origin-center group-[.active]:-rotate-45 group-[.active]:-translate-y-[6.5px]"></span>
+                </button>
+                <button class="hidden md:block border border-white/50 px-6 py-3 text-[11px] font-semibold tracking-[0.15em] uppercase hover:bg-white hover:text-black transition-all duration-500 backdrop-blur-sm">
+                    Register
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobileMenu" class="fixed inset-0 bg-[#1A1817] z-[55] flex flex-col justify-center items-center opacity-0 pointer-events-none transition-all duration-500 min-h-[100svh]">
+            <div class="flex flex-col gap-10 text-center text-sm font-semibold tracking-[0.2em] uppercase">
+                <a href="#tong-quan" class="text-white hover:text-[#D4AF37] transition-colors mobile-link">Overview</a>
+                <a href="#phoi-canh" class="text-white hover:text-[#D4AF37] transition-colors mobile-link">Architecture</a>
+                <a href="#vi-tri" class="text-white hover:text-[#D4AF37] transition-colors mobile-link">Location</a>
+                <a href="#bang-gia" class="text-white hover:text-[#D4AF37] transition-colors mobile-link">Pricing</a>
+                <button class="mt-8 border border-[#D4AF37] text-[#D4AF37] px-8 py-4 text-[11px] tracking-widest uppercase hover:bg-[#D4AF37] hover:text-[#1A1817] transition-colors">Register Now</button>
+            </div>
+        </div>
+
+        <!-- Hero Section (Variant: Split Screen) -->
+        <section id="tong-quan" class="relative w-full min-h-[100svh] flex flex-col lg:flex-row bg-[#1A1817] overflow-hidden pt-20 lg:pt-0">
+            <!-- Left Text Column -->
+            <div class="flex-1 flex flex-col justify-center px-8 lg:px-24 py-20 lg:py-0 relative z-10 order-2 lg:order-1">
+                <p class="text-[#D4AF37] tracking-[0.4em] text-[10px] font-bold uppercase mb-8 flex items-center gap-4">
+                    <span class="w-8 h-[2px] bg-[#D4AF37]"></span> A New Standard
+                </p>
+                <h1 class="font-sans text-white text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.05] font-light tracking-tight mb-8">
+                    The Genesis of <br />
+                    <span class="font-serif italic text-[#8B5A2B]">Elegance</span>
+                </h1>
+                <p class="text-white/40 text-sm font-light leading-relaxed max-w-md mb-12">
+                    76 Tran Hung Dao, Quy Nhon coastal city. The perfect harmony of 5-star amenities and exclusive private living.
+                </p>
+                <div class="flex items-center gap-8">
+                    <button class="bg-white text-[#1A1817] px-8 py-4 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-[#D4AF37] transition-colors">
+                        Visit Us
+                    </button>
+                    <a href="#phoi-canh" class="text-white/60 text-xs tracking-widest uppercase hover:text-white flex items-center gap-2 group transition-colors">
+                        Explore <span class="group-hover:translate-x-2 transition-transform">→</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Right Image Column (Slider) -->
+            <div class="flex-1 relative h-[50vh] lg:h-[100svh] lg:order-2 order-1 overflow-hidden">
+                <img src="/photos/3.jpg" alt="Altara Slide 1" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-100" />
+                <img src="/photos/4.jpg" alt="Altara Slide 2" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-0" />
+                <img src="/photos/7.jpg" alt="Altara Slide 3" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-0" />
+                <div class="absolute inset-0 bg-[#A68A64] mix-blend-multiply opacity-20 pointer-events-none"></div>
+                <!-- Decor Lines -->
+                <div class="absolute left-0 top-0 h-full w-[1px] bg-white/20 hidden lg:block"></div>
+                <!-- Box Stats overlay -->
+                <div class="absolute bottom-12 right-12 bg-white/10 backdrop-blur-xl border border-white/20 p-6 hidden md:block group hover:bg-white/20 transition-colors cursor-default">
+                    <p class="font-serif text-3xl text-white mb-1 group-hover:scale-110 origin-left transition-transform">100%</p>
+                    <p class="text-[9px] uppercase tracking-[0.2em] text-[#D4AF37]">Ocean View</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artistic Space Section -->
+        <section id="phoi-canh" class="py-32 lg:py-48 px-6 lg:px-16 bg-white relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
+                    <!-- Text Block -->
+                    <div class="flex flex-col justify-center">
+                        <p class="text-[#D4AF37] tracking-[0.4em] text-[10px] font-bold uppercase mb-8 flex items-center gap-4">
+                            <span class="w-8 h-[2px] bg-[#D4AF37]"></span> Artistic Space
+                        </p>
+                        <h2 class="font-sans text-5xl lg:text-[4rem] text-[#1A1817] leading-[1.1] tracking-tight mb-10 font-light">
+                            Minimalist <br />
+                            <span class="font-serif italic text-[#D4AF37] pr-2">Philosophy</span>
+                        </h2>
+                        <p class="text-[#1A1817]/60 leading-relaxed font-light mb-16 text-sm lg:text-base max-w-md">
+                            Rejecting superfluous details, the design at Altara honors original proportions, natural light, and the finest materials to create a tranquil symphony of living space.
+                        </p>
+                        <div class="flex gap-16 border-t border-[#1A1817]/10 pt-8">
+                            <div>
+                                <h4 class="font-serif text-4xl text-[#1A1817] mb-2">479</h4>
+                                <p class="text-[9px] uppercase tracking-[0.2em] text-[#1A1817]/40 font-bold">Limited Edition Units</p>
+                            </div>
+                            <div>
+                                <h4 class="font-serif text-4xl text-[#1A1817] mb-2">100<span class="text-xl">%</span></h4>
+                                <p class="text-[9px] uppercase tracking-[0.2em] text-[#1A1817]/40 font-bold">Direct Ocean View</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Premium Collage Block -->
+                    <div class="relative w-full h-[60vh] lg:h-auto lg:aspect-[4/5] grid grid-cols-2 grid-rows-2 gap-2 lg:gap-4 group">
+                        <!-- Main Image -->
+                        <div class="col-span-2 row-span-1 border border-[#D4AF37]/20 relative overflow-hidden bg-black">
+                            <img src="/photos/5.jpg" alt="Luxury Living" class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000 ease-out opacity-90 hover:opacity-100" />
+                            <div class="absolute bottom-6 left-6 text-white font-serif italic text-xl drop-shadow-md">Living Space.</div>
+                        </div>
+                        <!-- Bottom Images -->
+                        <div class="col-span-1 row-span-1 border border-[#D4AF37]/20 relative overflow-hidden bg-black">
+                            <img src="/photos/7.jpg" alt="Elegant Details" class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000 ease-out opacity-90 hover:opacity-100" />
+                        </div>
+                        <div class="col-span-1 row-span-1 border border-[#D4AF37]/20 relative overflow-hidden bg-black">
+                            <img src="/photos/8.jpg" alt="High-end Finish" class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000 ease-out opacity-90 hover:opacity-100" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="vi-tri" class="py-32 lg:py-48 px-6 lg:px-16 bg-[#111] text-white overflow-hidden relative">
+            <!-- Background element -->
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-[#1A1817] -skew-x-12 translate-x-32 hidden lg:block"></div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20 items-center relative z-10">
+                <div class="lg:col-span-5 order-2 lg:order-1 relative group">
+                    <div class="absolute inset-0 border border-[#D4AF37]/30 translate-x-4 translate-y-4 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
+                    <img src="/photos/6.jpg" alt="Location Map" class="relative z-10 w-full aspect-[4/5] object-cover grayscale opacity-70 mix-blend-luminosity hover:opacity-100 hover:grayscale-0 transition-all duration-700" />
+                    <div class="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
+                        <div class="bg-black/40 backdrop-blur-md px-8 py-6 border-l-[3px] border-[#D4AF37]">
+                            <span class="font-sans text-xl md:text-2xl tracking-[0.2em] font-light uppercase">76 Tran Hung Dao</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-1 hidden lg:block border-none"></div>
+
+                <div class="lg:col-span-6 order-1 lg:order-2">
+                    <p class="text-[#D4AF37] tracking-[0.4em] text-[10px] font-bold uppercase mb-8 flex items-center gap-4">
+                        <span class="w-8 h-[2px] bg-[#D4AF37]"></span> Prime Location
+                    </p>
+                    <h2 class="font-sans text-4xl lg:text-[4rem] leading-[1.1] font-light tracking-tight mb-16">
+                        Crossroads <br/><span class="font-serif italic text-white/50">of Elites</span>
+                    </h2>
+                    
+                    <div class="space-y-10">
+                        <div class="group flex gap-8 items-start hover:-translate-y-1 transition-transform cursor-default">
+                            <span class="font-sans text-4xl text-[#D4AF37] opacity-60 font-light group-hover:opacity-100 transition-opacity">01</span>
+                            <div>
+                                <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-2">1 Minute to The Waves</h4>
+                                <p class="text-white/40 font-light text-sm leading-relaxed max-w-sm">Step outside to instantly embrace the endless blue horizon, crashing waves, and soft sandy beaches.</p>
+                            </div>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10 mix-blend-overlay"></div>
+                        <div class="group flex gap-8 items-start hover:-translate-y-1 transition-transform cursor-default">
+                            <span class="font-sans text-4xl text-[#D4AF37] opacity-60 font-light group-hover:opacity-100 transition-opacity">03</span>
+                            <div>
+                                <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-2">3 Minutes to City Square</h4>
+                                <p class="text-white/40 font-light text-sm leading-relaxed max-w-sm">The epicenter of culture, major events, and breathtaking art festivals at the grand provincial square.</p>
+                            </div>
+                        </div>
+                        <div class="w-full h-[1px] bg-white/10 mix-blend-overlay"></div>
+                        <div class="group flex gap-8 items-start hover:-translate-y-1 transition-transform cursor-default">
+                            <span class="font-sans text-4xl text-[#D4AF37] opacity-60 font-light group-hover:opacity-100 transition-opacity">05</span>
+                            <div>
+                                <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-2">5 Minutes Convenience</h4>
+                                <p class="text-white/40 font-light text-sm leading-relaxed max-w-sm">Seamless connection to international standard hospitals and highly reputable educational systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="bang-gia" class="py-32 lg:py-48 px-6 lg:px-16 bg-[#F9F9F9]">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-20 lg:mb-32 gap-10">
+                    <div>
+                        <p class="text-[#D4AF37] tracking-[0.4em] text-[10px] font-bold uppercase mb-6 flex items-center gap-4">
+                            <span class="w-8 h-[2px] bg-[#D4AF37]"></span> Sustainable Investment
+                        </p>
+                        <h2 class="font-sans text-4xl lg:text-[4rem] text-[#1A1817] leading-none font-light tracking-tight">Worthy Masterpieces</h2>
+                    </div>
+                    <p class="font-serif text-[#1A1817]/40 text-2xl lg:text-3xl italic tracking-wide">Elevating Value</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 border border-[#1A1817]/10 bg-white">
+                    <!-- Unit: 1BR -->
+                    <div class="p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-[#1A1817]/10 hover:bg-[#FAF9F6] transition-colors group flex flex-col">
+                        <p class="text-[#D4AF37] text-[9px] uppercase tracking-[0.2em] font-bold mb-8">Freehold Ownership</p>
+                        <h3 class="font-sans text-2xl text-[#1A1817] font-light mb-10 uppercase tracking-widest">1 Bedroom</h3>
+                        
+                        <div class="mb-12">
+                            <span class="text-xs uppercase tracking-[0.2em] text-[#1A1817]/40 block mb-2">From</span>
+                            <div class="font-serif text-5xl text-[#1A1817]">1.8 <span class="text-xl font-sans font-light">Bil (VND)</span></div>
+                        </div>
+
+                        <ul class="space-y-5 text-xs tracking-[0.1em] text-[#1A1817]/60 uppercase mb-16 flex-1">
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Size: 45m²</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Open minimalist design</li>
+                            <li class="flex items-center gap-4 opacity-40"><span class="w-[4px] h-[4px] bg-gray-400"></span> Unobstructed views</li>
+                        </ul>
+
+                        <button class="w-full border border-[#1A1817]/20 text-[#1A1817] py-5 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-[#1A1817] hover:text-white transition-all">
+                            Get Quote Phase 1
+                        </button>
+                    </div>
+
+                    <!-- Unit: 2BR (Featured) -->
+                    <div class="p-10 lg:p-14 bg-[#1A1817] text-white hover:bg-[#111] transition-colors border-b lg:border-b-0 lg:border-r border-[#1A1817] relative flex flex-col group transform lg:scale-105 lg:-mt-4 lg:mb-4 shadow-2xl z-10">
+                        <div class="absolute top-0 left-0 w-full h-[2px] bg-[#D4AF37]"></div>
+                        <p class="text-[#D4AF37] text-[9px] uppercase tracking-[0.2em] font-bold mb-8 flex justify-between items-center">
+                            Elite Collection
+                            <span class="px-2 py-1 bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/50 tracking-widest">HOT</span>
+                        </p>
+                        <h3 class="font-sans text-2xl text-white font-light mb-10 uppercase tracking-widest">2 Bedrooms</h3>
+                        
+                        <div class="mb-12">
+                            <span class="text-xs uppercase tracking-[0.2em] text-white/40 block mb-2">From</span>
+                            <div class="font-serif text-5xl text-[#D4AF37]">2.5 <span class="text-xl font-sans font-light text-white">Bil (VND)</span></div>
+                        </div>
+
+                        <ul class="space-y-5 text-xs tracking-[0.1em] text-white/70 uppercase mb-16 flex-1">
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Size: 75m²</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Ultra-wide balcony</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Panoramic Ocean View</li>
+                            <li class="flex items-center gap-4 text-[#D4AF37]"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> 8% guaranteed ROI</li>
+                        </ul>
+
+                        <button class="w-full bg-[#D4AF37] text-[#1A1817] py-5 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white transition-all">
+                            Exclusive Consultation
+                        </button>
+                    </div>
+
+                    <!-- Unit: Penthouse -->
+                    <div class="p-10 lg:p-14 hover:bg-[#FAF9F6] transition-colors group flex flex-col">
+                        <p class="text-[#1A1817]/40 text-[9px] uppercase tracking-[0.2em] font-bold mb-8">Limited Edition</p>
+                        <h3 class="font-sans text-2xl text-[#1A1817] font-light mb-10 uppercase tracking-widest">Penthouse</h3>
+                        
+                        <div class="mb-12">
+                            <span class="text-xs uppercase tracking-[0.2em] text-[#1A1817]/40 block mb-2">INTERNAL ALLOCATION</span>
+                            <div class="font-serif text-3xl md:text-4xl text-[#1A1817] mt-3">Contact Directly</div>
+                        </div>
+
+                        <ul class="space-y-5 text-xs tracking-[0.1em] text-[#1A1817]/60 uppercase mb-16 flex-1">
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Area > 150m²</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Personal VIP privileges</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Royal-class amenities</li>
+                        </ul>
+
+                        <button class="w-full border border-[#1A1817]/20 text-[#1A1817] py-5 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-[#1A1817] hover:text-white transition-all mt-auto">
+                            Setup Appointment
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-[#1A1817] text-white pt-24 pb-12 px-6 lg:px-16 border-t border-[#3A3530]">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20">
+                    <div class="lg:col-span-4">
+                        <h2 class="font-serif text-3xl tracking-[0.2em] uppercase mb-8 text-white">Altara</h2>
+                        <p class="text-white/50 font-light leading-relaxed text-sm lg:w-3/4">
+                            Establishing the ultimate luxury lifestyle at Quy Nhon Bay. An elite convergence of world-class experiences and personalized prestige.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-3">
+                        <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#D4AF37] mb-8">Connect With Us</h4>
+                        <ul class="space-y-5 text-sm text-white/70 font-light">
+                            <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">P.</span> 094 838 5566</li>
+                            <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">E.</span> tuongnm@gmail.com</li>
+                            <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">A.</span> 76 Tran Hung Dao, Quy Nhon</li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-5 flex flex-col items-start lg:items-end">
+                        <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#D4AF37] mb-8">Receive VIP Invite</h4>
+                        <form action="https://formsubmit.co/tuongnm@gmail.com" method="POST" class="flex w-full max-w-sm border-b border-white/30 pb-3 hover:border-white transition-colors focus-within:border-white">
+                            <input type="hidden" name="_subject" value="[Altara] Đăng ký nhận bản tin VIP (EN)">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="email" name="email" required placeholder="Enter your email" class="bg-transparent border-none outline-none text-white placeholder-white/30 text-sm flex-1 font-light" />
+                            <button type="submit" class="text-[10px] font-bold uppercase tracking-[0.2em] hover:text-[#D4AF37] transition-colors ml-4">Send</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-white/40 font-light tracking-[0.1em] gap-6">
+                    <p>&copy; 2026 ALTARA RESIDENCES. ALL RIGHTS RESERVED.</p>
+                    <div class="flex gap-8">
+                        <a href="#" class="hover:text-white transition-colors">PRIVACY POLICY</a>
+                        <a href="#" class="hover:text-white transition-colors">TERMS OF SERVICE</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Registration Modal -->
+        <div id="registerModal" class="fixed inset-0 z-[150] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500 p-4 lg:p-0">
+            <!-- Backdrop -->
+            <div class="absolute inset-0 bg-[#1A1817]/90 backdrop-blur-sm modal-backdrop transition-opacity"></div>
+            
+            <!-- Modal Content (Premium Split Layout) -->
+            <div class="relative bg-white w-full max-w-4xl mx-auto flex flex-col md:flex-row transform scale-95 opacity-0 transition-all duration-500 delay-100 modal-panel shadow-2xl overflow-hidden">
+                <button class="absolute top-4 right-4 z-10 text-[#1A1817]/40 hover:text-[#1A1817] transition-colors close-modal p-2 bg-white/50 backdrop-blur-md rounded-full">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+
+                <!-- Left Image (Hidden on very small screens) -->
+                <div class="hidden md:block w-2/5 relative overflow-hidden bg-[#1A1817]">
+                    <img src="/photos/9.png" alt="Altara Lifestyle" class="modal-slide absolute inset-0 w-full h-full object-cover opacity-90 transition-opacity duration-[2000ms]" />
+                    <img src="/photos/2.jpg" alt="Altara Lifestyle" class="modal-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[2000ms]" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1A1817]/90 via-[#1A1817]/20 to-transparent"></div>
+                    <div class="absolute bottom-10 left-10 text-white">
+                        <h2 class="font-serif text-3xl tracking-[0.2em] uppercase mb-2">Altara</h2>
+                        <p class="text-[10px] uppercase tracking-widest font-light text-[#D4AF37]">Premium Residences</p>
+                    </div>
+                </div>
+                
+                <!-- Right Form -->
+                <div class="w-full md:w-3/5 p-8 md:p-14 lg:p-16 flex flex-col justify-center">
+                    <p class="text-[#D4AF37] tracking-[0.4em] text-[9px] font-bold uppercase mb-4 flex items-center gap-3">
+                        <span class="w-6 h-[2px] bg-[#D4AF37]"></span> Get Advise
+                    </p>
+                    <h3 class="font-sans text-3xl text-[#1A1817] font-light tracking-tight mb-2">Registration <span class="font-serif italic text-[#D4AF37] pr-1">Information</span></h3>
+                    <p class="text-[#1A1817]/60 text-xs mb-8 leading-relaxed font-light">Altara's senior consultants will contact you directly to provide exclusive details.</p>
+                    
+                    <form id="vipRegisterForm" class="space-y-5">
+                        <input type="hidden" name="_subject" value="[Altara] Yêu cầu tư vấn VIP (EN)">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1817] mb-2">Full Name *</label>
+                            <input type="text" name="name" required class="w-full bg-[#f9f9f9] border border-gray-200 focus:border-[#D4AF37] focus:bg-white transition-colors outline-none text-[#1A1817] text-sm px-4 py-3" />
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1817] mb-2">Phone Number *</label>
+                            <input type="tel" name="phone" required class="w-full bg-[#f9f9f9] border border-gray-200 focus:border-[#D4AF37] focus:bg-white transition-colors outline-none text-[#1A1817] text-sm px-4 py-3" />
+                        </div>
+                        <div>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1817] mb-2">Email Address *</label>
+                            <input type="email" name="email" required class="w-full bg-[#f9f9f9] border border-gray-200 focus:border-[#D4AF37] focus:bg-white transition-colors outline-none text-[#1A1817] text-sm px-4 py-3" />
+                        </div>
+                        
+                        <button id="submitBtn" type="submit" class="w-full bg-[#1A1817] text-white py-4 mt-4 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#D4AF37] hover:text-[#1A1817] transition-all duration-500">
+                            Submit Request
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="hidden flex-col items-center justify-center text-center py-8 animate-[fadeIn_0.5s_ease-out]">
+                        <svg class="w-16 h-16 text-[#D4AF37] mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h4 class="font-sans text-3xl text-[#1A1817] font-light mb-4">Registration Successful</h4>
+                        <p class="text-[#1A1817]/60 text-sm font-light mb-8 max-w-sm">Thank you. We will review your request and contact you shortly.</p>
+                        <button type="button" class="close-modal bg-[#1A1817] text-white px-10 py-4 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#D4AF37] hover:text-[#1A1817] transition-all duration-300">
+                            Close Window
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Action Buttons -->
+        <div class="fixed right-6 lg:right-12 bottom-6 lg:bottom-12 z-[100] flex flex-col gap-4">
+            <!-- Zalo Button (Classic Widget Variant) -->
+            <div class="relative group w-12 h-12 flex items-center justify-center cursor-pointer">
+                <!-- Animated Ripples -->
+                <div class="absolute inset-[-14px] bg-[#0068FF] rounded-full opacity-20 animate-ping" style="animation-duration: 2.5s;"></div>
+                <div class="absolute inset-[-7px] bg-[#0068FF] rounded-full opacity-30"></div>
+                
+                <a href="https://zalo.me/0948385566" target="_blank" rel="noopener noreferrer" aria-label="Zalo Contact" class="relative z-10 w-full h-full flex items-center justify-center rounded-full bg-[#0068FF] hover:scale-110 transition-transform duration-300 shadow-[0_10px_20px_rgba(0,104,255,0.4)]">
+                    <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.1 436.01">
+                        <path fill="#fff" d="M230.1 0C103 0 0 91.2 0 203.7c0 58.7 28.5 111.4 73 147.2l-30 91.3c-3 9.4 6 18.2 14.2 13.7l93-47c16 8 33 13.9 51.3 18.5 9 1 18.6 1.8 28.6 1.8 127 0 230-91.2 230-203.8S357 0 230 0z"/>
+                        <path fill="#0068ff" d="M192 284v-27l-35.4-38c-3-3-5.5-6-7.8-10h32.2V173H128v14.5l42 43.6c2.8 3 5.4 6 7.6 9H138v33.7h54zm41-110h-31.8v91h31.8v-91zm82 0h-31.5v91h31.5v-91zm82 43c0-25-20-45-45-45s-45 20-45 45 20 45 45 45 45-20 45-45zm-63 0c0-10 8-18 18-18s18 8 18 18-8 18-18 18-18-8-18-18z"/>
+                    </svg>
+                </a>
+                
+                <!-- Tooltip with triangle pointer -->
+                <div class="absolute right-[calc(100%+24px)] top-1/2 -translate-y-1/2 bg-white text-[#1A1817] text-[10px] font-bold tracking-widest uppercase px-4 py-2 opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg rounded-sm before:content-[''] before:absolute before:left-full before:top-1/2 before:-translate-y-1/2 before:border-[5px] before:border-transparent before:border-l-white">
+                    Chat Zalo
+                </div>
+            </div>
+            
+            <!-- Phone Button -->
+            <a href="tel:0948385566" aria-label="Gọi điện thoại" class="w-12 h-12 flex items-center justify-center rounded-full bg-[#1A1817] text-white shadow-[0_10px_30px_rgba(0,0,0,0.2)] hover:bg-[#D4AF37] hover:text-[#1A1817] transition-all duration-300 hover:scale-110 relative group">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <div class="absolute right-[calc(100%+16px)] bg-[#1A1817] text-white text-[10px] font-bold tracking-widest uppercase px-4 py-2 opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg">094 838 5566</div>
+            </a>
+
+            <!-- Scroll to Top Button -->
+            <button id="scrollToTopBtn" aria-label="Scroll to top" class="w-12 h-12 flex items-center justify-center rounded-full bg-[#D4AF37] text-[#1A1817] opacity-0 pointer-events-none translate-y-4 transition-all duration-500 hover:bg-white hover:scale-110 shadow-[0_10px_30px_rgba(212,175,55,0.3)]">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M12 4v16m0-16l-6 6m6-6l6 6"></path>
+                </svg>
+            </button>
+        </div>
+	</main>
+</Layout>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // --- Mobile Menu Logic ---
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const mobileLinks = document.querySelectorAll(".mobile-link");
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener("click", () => {
+                mobileMenuBtn.classList.toggle("active");
+                if (mobileMenuBtn.classList.contains("active")) {
+                    mobileMenu.classList.remove("opacity-0", "pointer-events-none");
+                    mobileMenu.classList.add("opacity-100", "pointer-events-auto");
+                    document.body.style.overflow = "hidden"; // Prevent scrolling
+                } else {
+                    mobileMenu.classList.add("opacity-0", "pointer-events-none");
+                    mobileMenu.classList.remove("opacity-100", "pointer-events-auto");
+                    document.body.style.overflow = "auto";
+                }
+            });
+
+            // Close menu when clicking a link
+            mobileLinks.forEach(link => {
+                link.addEventListener("click", () => {
+                    mobileMenuBtn.classList.remove("active");
+                    mobileMenu.classList.add("opacity-0", "pointer-events-none");
+                    mobileMenu.classList.remove("opacity-100", "pointer-events-auto");
+                    document.body.style.overflow = "auto";
+                });
+            });
+        }
+
+        // --- Registration Modal Logic ---
+        const registerModal = document.getElementById("registerModal");
+        const modalPanel = registerModal?.querySelector(".modal-panel");
+        const closeBtns = document.querySelectorAll(".close-modal, .modal-backdrop");
+        
+        // Auto-add open-register class to all CTA buttons
+        const ctaButtons = document.querySelectorAll(
+            '#navbar button:not(#mobileMenuBtn), #mobileMenu button, #tong-quan button, #bang-gia button'
+        );
+        ctaButtons.forEach(btn => btn.classList.add('open-register'));
+        
+        const openModalBtns = document.querySelectorAll(".open-register");
+
+        if (registerModal && modalPanel) {
+            const openModal = () => {
+                registerModal.classList.remove("opacity-0", "pointer-events-none");
+                setTimeout(() => {
+                    modalPanel.classList.remove("scale-95", "opacity-0");
+                    modalPanel.classList.add("scale-100", "opacity-100");
+                }, 10);
+                document.body.style.overflow = "hidden";
+                
+                // Auto-focus the first input field for better UX
+                const firstInput = registerModal.querySelector('input[name="name"]');
+                if (firstInput) {
+                    setTimeout(() => {
+                        firstInput.focus();
+                    }, 400); // Wait for modal transition to finish
+                }
+                
+                // If mobile menu is open, close it
+                if (mobileMenuBtn && mobileMenuBtn.classList.contains("active")) {
+                    mobileMenuBtn.click();
+                }
+            };
+
+            const closeModal = (e) => {
+                if(e) e.preventDefault();
+                modalPanel.classList.remove("scale-100", "opacity-100");
+                modalPanel.classList.add("scale-95", "opacity-0");
+                setTimeout(() => {
+                    registerModal.classList.add("opacity-0", "pointer-events-none");
+                    document.body.style.overflow = "auto";
+                }, 300);
+            };
+
+            openModalBtns.forEach(btn => btn.addEventListener("click", openModal));
+            closeBtns.forEach(btn => btn.addEventListener("click", closeModal));
+        }
+
+        // --- AJAX Form Submission Logic ---
+        const vipForm = document.getElementById("vipRegisterForm");
+        const successMsg = document.getElementById("successMessage");
+        const submitBtn = document.getElementById("submitBtn");
+
+        if (vipForm) {
+            vipForm.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const formData = new FormData(vipForm);
+                const data = Object.fromEntries(formData.entries());
+                
+                submitBtn.innerHTML = "Sending...";
+                submitBtn.classList.add("opacity-50", "pointer-events-none");
+
+                fetch("https://formsubmit.co/ajax/tuongnm@gmail.com", {
+                    method: "POST",
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    vipForm.classList.add("hidden");
+                    successMsg.classList.remove("hidden");
+                    successMsg.classList.add("flex");
+                })
+                .catch(error => {
+                    console.log(error);
+                    submitBtn.innerHTML = "Error. Please try again!";
+                    setTimeout(() => {
+                        submitBtn.innerHTML = "Submit Request";
+                        submitBtn.classList.remove("opacity-50", "pointer-events-none");
+                    }, 3000);
+                });
+            });
+        }
+
+        // --- Scroll Logic ---
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        const navbar = document.getElementById("navbar");
+        
+        if (scrollToTopBtn) {
+            window.addEventListener("scroll", () => {
+                // Navbar scroll effect
+                if (window.scrollY > 50) {
+                    navbar?.classList.add("scrolled");
+                } else {
+                    navbar?.classList.remove("scrolled");
+                }
+
+                // Scroll to top button logic
+                if (window.scrollY > 600) {
+                    scrollToTopBtn.classList.remove("opacity-0", "pointer-events-none", "translate-y-4");
+                    scrollToTopBtn.classList.add("opacity-100", "pointer-events-auto", "translate-y-0");
+                } else {
+                    scrollToTopBtn.classList.add("opacity-0", "pointer-events-none", "translate-y-4");
+                    scrollToTopBtn.classList.remove("opacity-100", "pointer-events-auto", "translate-y-0");
+                }
+            });
+
+            scrollToTopBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        }
+
+        // --- Smooth Scroll without Hash in URL ---
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // --- Modal Slider Logic ---
+        const modalSlides = document.querySelectorAll('.modal-slide');
+        if (modalSlides.length > 1) {
+            let mSlide = 0;
+            setInterval(() => {
+                modalSlides[mSlide].classList.remove('opacity-90');
+                modalSlides[mSlide].classList.add('opacity-0');
+                mSlide = (mSlide + 1) % modalSlides.length;
+                modalSlides[mSlide].classList.remove('opacity-0');
+                modalSlides[mSlide].classList.add('opacity-90');
+            }, 3000); // Crossfade every 3s
+        }
+
+        // --- Hero Slider Logic ---
+        const sliderImgs = document.querySelectorAll('.hero-slide');
+        if (sliderImgs.length > 1) {
+            let currentSlide = 0;
+            setInterval(() => {
+                sliderImgs[currentSlide].classList.remove('opacity-100');
+                sliderImgs[currentSlide].classList.add('opacity-0');
+                
+                currentSlide = (currentSlide + 1) % sliderImgs.length;
+                
+                sliderImgs[currentSlide].classList.remove('opacity-0');
+                sliderImgs[currentSlide].classList.add('opacity-100');
+            }, 4000); // Crossfade every 4s
+        }
+    });
+</script>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    @keyframes slowZoom {
+        0% { transform: scale(1.0); }
+        100% { transform: scale(1.1); }
+    }
+    
+    /* Navbar Scrolled State */
+    #navbar.scrolled {
+        background-color: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        color: #1A1817;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-color: rgba(26, 24, 23, 0.05);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+    #navbar.scrolled a {
+        color: #1A1817;
+    }
+    #navbar.scrolled a.hover\:text-\[\#D4AF37\]:hover {
+        color: #D4AF37;
+    }
+    #navbar.scrolled .text-white\/50 {
+        color: rgba(26, 24, 23, 0.4);
+    }
+    #navbar.scrolled .text-white\/50:hover {
+        color: #1A1817;
+    }
+    #navbar.scrolled .bg-white\/30 {
+        background-color: rgba(26, 24, 23, 0.2);
+    }
+    #navbar.scrolled button.border-white\/50 {
+        border-color: rgba(26, 24, 23, 0.3);
+        color: #1A1817;
+    }
+    #navbar.scrolled button.border-white\/50:hover {
+        background-color: #1A1817;
+        color: white;
+    }
+    #navbar.scrolled #mobileMenuBtn span {
+        background-color: #1A1817;
+    }
+    #navbar.scrolled .lang-pill {
+        background-color: rgba(26, 24, 23, 0.05);
+        border-color: rgba(26, 24, 23, 0.1);
+    }
+    #navbar.scrolled .lang-pill .div-line {
+        background-color: rgba(26, 24, 23, 0.2);
+    }
+    #navbar.scrolled .lang-pill .lang-en {
+        color: #1A1817;
+    }
+</style>
