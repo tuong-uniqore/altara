@@ -50,13 +50,13 @@ import Layout from '../layouts/Layout.astro';
                     </div>
                     <!-- Dropdown -->
                     <div class="lang-dropdown absolute top-[calc(100%+8px)] right-0 bg-[#1A1817]/90 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 w-28 flex flex-col shadow-2xl">
-                        <a href="/" class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-white/50 hover:text-white border-b border-white/10 lang-item">
+                        <a href="/" data-astro-prefetch class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-white/50 hover:text-white border-b border-white/10 lang-item">
                             <img src="https://flagcdn.com/w20/vn.png" alt="VI" class="w-4 h-auto rounded-sm"> VI
                         </a>
-                        <a href="/en" class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-white/50 hover:text-white border-b border-white/10 lang-item">
+                        <a href="/en" data-astro-prefetch class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-white/50 hover:text-white border-b border-white/10 lang-item">
                             <img src="https://flagcdn.com/w20/gb.png" alt="EN" class="w-4 h-auto rounded-sm"> EN
                         </a>
-                        <a href="/ko" class="flex items-center gap-3 px-4 py-3 bg-[#D4AF37]/20 transition-colors text-white/90 lang-item is-active">
+                        <a href="/ko" data-astro-prefetch class="flex items-center gap-3 px-4 py-3 bg-[#D4AF37]/20 transition-colors text-white/90 lang-item is-active">
                             <img src="https://flagcdn.com/w20/kr.png" alt="KR" class="w-4 h-auto rounded-sm"> KR
                         </a>
                     </div>
@@ -454,7 +454,7 @@ import Layout from '../layouts/Layout.astro';
 </Layout>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener("astro:page-load", () => {
         // --- Mobile Menu Logic ---
         const mobileMenuBtn = document.getElementById("mobileMenuBtn");
         const mobileMenu = document.getElementById("mobileMenu");
