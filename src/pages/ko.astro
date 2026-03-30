@@ -535,6 +535,49 @@ import Layout from '../layouts/Layout.astro';
             closeBtns.forEach(btn => btn.addEventListener("click", closeModal));
         }
 
+        
+
+        // --- Auto/Smart Popup (Exit Intent + Scroll + Time) ---
+        const hasSeenPopup = sessionStorage.getItem('altara_popup_seen');
+        
+        if (!hasSeenPopup && registerModal && modalPanel) {
+            let popupTriggered = false;
+
+            const triggerAutoPopup = () => {
+                if (popupTriggered) return;
+                popupTriggered = true;
+                sessionStorage.setItem('altara_popup_seen', 'true'); // Only show ONCE per session
+                
+                // Simulate click on open register
+                registerModal.classList.remove("opacity-0", "pointer-events-none");
+                setTimeout(() => {
+                    modalPanel.classList.remove("scale-95", "opacity-0");
+                    modalPanel.classList.add("scale-100", "opacity-100");
+                }, 10);
+                document.body.style.overflow = "hidden";
+            };
+
+            // Trigger 1: Time Dwell (45 seconds)
+            setTimeout(triggerAutoPopup, 45000);
+
+            // Trigger 2: Read Depth (Scrolled 60% of the page)
+            const checkScrollDepth = () => {
+                const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+                if (scrollPercent > 0.6) {
+                    triggerAutoPopup();
+                    window.removeEventListener('scroll', checkScrollDepth);
+                }
+            };
+            window.addEventListener('scroll', checkScrollDepth);
+
+            // Trigger 3: Exit Intent (Mouse leaves top of window - Desktop)
+            document.addEventListener("mouseleave", (e) => {
+                if (e.clientY < 0) {
+                    triggerAutoPopup();
+                }
+            });
+        }
+
         // --- AJAX Form Submission Logic ---
         const vipForm = document.getElementById("vip등록Form");
         const successMsg = document.getElementById("successMessage");
