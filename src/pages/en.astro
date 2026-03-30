@@ -70,9 +70,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
 
         <!-- Hero Section (Variant: Split Screen) -->
-        <section id="tong-quan" class="relative w-full min-h-[100svh] flex flex-col lg:flex-row bg-[#1A1817] overflow-hidden pt-20 lg:pt-0">
+        <section id="tong-quan" class="relative w-full min-h-[100svh] flex flex-col lg:flex-row bg-[#1A1817] overflow-hidden pt-0">
             <!-- Left Text Column -->
-            <div class="flex-1 flex flex-col justify-center px-8 lg:px-24 py-20 lg:py-0 relative z-10 order-2 lg:order-1">
+            <div class="w-full lg:w-1/2 lg:flex-1 flex flex-col justify-center px-8 lg:px-24 py-16 lg:py-0 relative z-10 order-2 lg:order-1">
                 <p class="text-[#D4AF37] tracking-[0.4em] text-[10px] font-bold uppercase mb-8 flex items-center gap-4">
                     <span class="w-8 h-[2px] bg-[#D4AF37]"></span> A New Standard
                 </p>
@@ -94,7 +94,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
             
             <!-- Right Image Column (Slider) -->
-            <div class="flex-1 relative h-[50vh] lg:h-[100svh] lg:order-2 order-1 overflow-hidden">
+            <div class="w-full lg:w-1/2 lg:flex-1 relative min-h-[55vh] lg:min-h-0 lg:h-[100svh] lg:order-2 order-1 overflow-hidden shrink-0">
                 <img src="/photos/3.jpg" alt="Altara Slide 1" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-100" />
                 <img src="/photos/4.jpg" alt="Altara Slide 2" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-0" />
                 <img src="/photos/7.jpg" alt="Altara Slide 3" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-0" />
