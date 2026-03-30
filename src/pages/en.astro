@@ -42,7 +42,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="flex items-center gap-4 lg:gap-6">
                 <!-- Unified Lang Pill -->
                 <div class="flex items-center gap-3 bg-white/10 border border-white/20 backdrop-blur-md px-3 md:px-4 py-1.5 md:py-2 rounded-full text-[9px] md:text-[10px] tracking-widest lang-pill transition-colors z-50">
-                    <a href="/" class="text-white hover:text-[#D4AF37] opacity-60 hover:opacity-100 transition-all lang-en">VI</a>
+                    <a href={import.meta.env.BASE_URL} class="text-white hover:text-[#D4AF37] opacity-60 hover:opacity-100 transition-all lang-en">VI</a>
                     <span class="w-[1px] h-3 bg-white/30 div-line"></span>
                     <span class="font-bold text-[#D4AF37]">EN</span>
                 </div>
@@ -95,9 +95,9 @@ import Layout from '../layouts/Layout.astro';
             
             <!-- Right Image Column (Slider) -->
             <div class="flex-1 relative h-[50vh] lg:h-[100svh] lg:order-2 order-1 overflow-hidden">
-                <img src="/photos/3.jpg" alt="Altara Slide 1" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-100" />
-                <img src="/photos/4.jpg" alt="Altara Slide 2" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-0" />
-                <img src="/photos/7.jpg" alt="Altara Slide 3" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-0" />
+                <img src={import.meta.env.BASE_URL + "photos/3.jpg"} alt="Altara Slide 1" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-100" />
+                <img src={import.meta.env.BASE_URL + "photos/4.jpg"} alt="Altara Slide 2" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-0" />
+                <img src={import.meta.env.BASE_URL + "photos/7.jpg"} alt="Altara Slide 3" class="hero-slide absolute inset-0 w-full h-full object-cover object-center transform scale-105 transition-opacity duration-[2000ms] opacity-0" />
                 <div class="absolute inset-0 bg-[#A68A64] mix-blend-multiply opacity-20 pointer-events-none"></div>
                 <!-- Decor Lines -->
                 <div class="absolute left-0 top-0 h-full w-[1px] bg-white/20 hidden lg:block"></div>
@@ -141,15 +141,15 @@ import Layout from '../layouts/Layout.astro';
                     <div class="relative w-full h-[60vh] lg:h-auto lg:aspect-[4/5] grid grid-cols-2 grid-rows-2 gap-2 lg:gap-4 group">
                         <!-- Main Image -->
                         <div class="col-span-2 row-span-1 border border-[#D4AF37]/20 relative overflow-hidden bg-black">
-                            <img src="/photos/5.jpg" alt="Luxury Living" class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000 ease-out opacity-90 hover:opacity-100" />
+                            <img src={import.meta.env.BASE_URL + "photos/5.jpg"} alt="Luxury Living" class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000 ease-out opacity-90 hover:opacity-100" />
                             <div class="absolute bottom-6 left-6 text-white font-serif italic text-xl drop-shadow-md">Living Space.</div>
                         </div>
                         <!-- Bottom Images -->
                         <div class="col-span-1 row-span-1 border border-[#D4AF37]/20 relative overflow-hidden bg-black">
-                            <img src="/photos/7.jpg" alt="Elegant Details" class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000 ease-out opacity-90 hover:opacity-100" />
+                            <img src={import.meta.env.BASE_URL + "photos/7.jpg"} alt="Elegant Details" class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000 ease-out opacity-90 hover:opacity-100" />
                         </div>
                         <div class="col-span-1 row-span-1 border border-[#D4AF37]/20 relative overflow-hidden bg-black">
-                            <img src="/photos/8.jpg" alt="High-end Finish" class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000 ease-out opacity-90 hover:opacity-100" />
+                            <img src={import.meta.env.BASE_URL + "photos/8.jpg"} alt="High-end Finish" class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000 ease-out opacity-90 hover:opacity-100" />
                         </div>
                     </div>
                 </div>
@@ -164,7 +164,7 @@ import Layout from '../layouts/Layout.astro';
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20 items-center relative z-10">
                 <div class="lg:col-span-5 order-2 lg:order-1 relative group">
                     <div class="absolute inset-0 border border-[#D4AF37]/30 translate-x-4 translate-y-4 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
-                    <img src="/photos/6.jpg" alt="Location Map" class="relative z-10 w-full aspect-[4/5] object-cover grayscale opacity-70 mix-blend-luminosity hover:opacity-100 hover:grayscale-0 transition-all duration-700" />
+                    <img src={import.meta.env.BASE_URL + "photos/6.jpg"} alt="Location Map" class="relative z-10 w-full aspect-[4/5] object-cover grayscale opacity-70 mix-blend-luminosity hover:opacity-100 hover:grayscale-0 transition-all duration-700" />
                     <div class="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
                         <div class="bg-black/40 backdrop-blur-md px-8 py-6 border-l-[3px] border-[#D4AF37]">
                             <span class="font-sans text-xl md:text-2xl tracking-[0.2em] font-light uppercase">76 Tran Hung Dao</span>
@@ -348,8 +348,8 @@ import Layout from '../layouts/Layout.astro';
 
                 <!-- Left Image (Hidden on very small screens) -->
                 <div class="hidden md:block w-2/5 relative overflow-hidden bg-[#1A1817]">
-                    <img src="/photos/9.png" alt="Altara Lifestyle" class="modal-slide absolute inset-0 w-full h-full object-cover opacity-90 transition-opacity duration-[2000ms]" />
-                    <img src="/photos/2.jpg" alt="Altara Lifestyle" class="modal-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[2000ms]" />
+                    <img src={import.meta.env.BASE_URL + "photos/9.png"} alt="Altara Lifestyle" class="modal-slide absolute inset-0 w-full h-full object-cover opacity-90 transition-opacity duration-[2000ms]" />
+                    <img src={import.meta.env.BASE_URL + "photos/2.jpg"} alt="Altara Lifestyle" class="modal-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[2000ms]" />
                     <div class="absolute inset-0 bg-gradient-to-t from-[#1A1817]/90 via-[#1A1817]/20 to-transparent"></div>
                     <div class="absolute bottom-10 left-10 text-white">
                         <h2 class="font-serif text-3xl tracking-[0.2em] uppercase mb-2">Altara</h2>
