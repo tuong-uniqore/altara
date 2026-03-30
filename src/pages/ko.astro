@@ -3,8 +3,9 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout 
-    title="ALTARA RESIDENCES - Đẳng Cấp Sống Thượng Lưu" 
-    description="Căn hộ biển cao cấp sỡ hữu lâu dài tại trung tâm thành phố Quy Nhơn."
+    title="ALTARA RESIDENCES - 럭셔리 라이프스타일의 정점" 
+    description="꾸이년 중심부의 프리미엄 영구 소유권 해변 레지던스."
+    lang="ko"
 >
 	<main class="w-full bg-[#FAF9F6] text-[#2C2825] overflow-hidden selection:bg-[#9B6B43] selection:text-white">
         <!-- Navigation Bar -->
@@ -21,19 +22,19 @@ import Layout from '../layouts/Layout.astro';
             <!-- Desktop Menu -->
             <div class="hidden md:flex gap-10 text-[11px] font-semibold tracking-[0.2em] uppercase items-center">
                 <a href="#tong-quan" class="hover:text-[#D4AF37] transition-colors relative group">
-                    Tổng quan
+                    개요
                     <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#phoi-canh" class="hover:text-[#D4AF37] transition-colors relative group">
-                    Kiến trúc
+                    건축
                     <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#vi-tri" class="hover:text-[#D4AF37] transition-colors relative group">
-                    Vị trí
+                    위치
                     <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#bang-gia" class="hover:text-[#D4AF37] transition-colors relative group">
-                    Bảng giá
+                    가격
                     <span class="absolute -bottom-2 left-0 w-0 h-[1px] bg-[#D4AF37] transition-all duration-300 group-hover:w-full"></span>
                 </a>
             </div>
@@ -43,19 +44,19 @@ import Layout from '../layouts/Layout.astro';
                 <!-- Language Dropdown -->
                 <div class="group relative flex items-center justify-center bg-white/10 border border-white/20 backdrop-blur-md px-3 md:px-4 py-1.5 md:py-2 rounded-full text-[9px] md:text-[10px] tracking-widest cursor-pointer z-50">
                     <div class="flex items-center gap-2">
-                        <img src="https://flagcdn.com/w20/vn.png" alt="VI" class="w-3.5 md:w-4 h-auto rounded-sm">
-                        <span class="font-bold text-[#D4AF37]">VI</span>
+                        <img src="https://flagcdn.com/w20/kr.png" alt="KR" class="w-3.5 md:w-4 h-auto rounded-sm">
+                        <span class="font-bold text-[#D4AF37]">KR</span>
                         <svg class="w-3 h-3 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </div>
                     <!-- Dropdown -->
                     <div class="absolute top-[calc(100%+8px)] right-0 bg-[#1A1817]/90 backdrop-blur-lg border border-white/20 rounded-xl overflow-hidden opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300 w-28 flex flex-col shadow-2xl">
-                        <a href="/" class="flex items-center gap-3 px-4 py-3 bg-[#D4AF37]/20 transition-colors text-white/90">
+                        <a href="/" class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-white/50 hover:text-white border-b border-white/10">
                             <img src="https://flagcdn.com/w20/vn.png" alt="VI" class="w-4 h-auto rounded-sm"> VI
                         </a>
-                        <a href="/en" class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-white/50 hover:text-white border-t border-white/10">
+                        <a href="/en" class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-white/50 hover:text-white border-b border-white/10">
                             <img src="https://flagcdn.com/w20/gb.png" alt="EN" class="w-4 h-auto rounded-sm"> EN
                         </a>
-                        <a href="/ko" class="flex items-center gap-3 px-4 py-3 hover:bg-white/10 transition-colors text-white/50 hover:text-white border-t border-white/10">
+                        <a href="/ko" class="flex items-center gap-3 px-4 py-3 bg-[#D4AF37]/20 transition-colors text-white/90">
                             <img src="https://flagcdn.com/w20/kr.png" alt="KR" class="w-4 h-auto rounded-sm"> KR
                         </a>
                     </div>
@@ -67,7 +68,7 @@ import Layout from '../layouts/Layout.astro';
                     <span class="w-6 h-[1.5px] bg-white transition-all duration-300 origin-center group-[.active]:-rotate-45 group-[.active]:-translate-y-[6.5px]"></span>
                 </button>
                 <button class="hidden md:block border border-white/50 px-6 py-3 text-[11px] font-semibold tracking-[0.15em] uppercase hover:bg-white hover:text-black transition-all duration-500 backdrop-blur-sm">
-                    Đăng Ký
+                    등록
                 </button>
             </div>
         </nav>
@@ -75,11 +76,11 @@ import Layout from '../layouts/Layout.astro';
         <!-- Mobile Menu Overlay -->
         <div id="mobileMenu" class="fixed inset-0 bg-[#1A1817] z-[55] flex flex-col justify-center items-center opacity-0 pointer-events-none transition-all duration-500 min-h-[100svh]">
             <div class="flex flex-col gap-10 text-center text-sm font-semibold tracking-[0.2em] uppercase">
-                <a href="#tong-quan" class="mobile-link text-white/50 hover:text-[#D4AF37] transition-colors">Tổng quan</a>
-                <a href="#phoi-canh" class="mobile-link text-white/50 hover:text-[#D4AF37] transition-colors">Kiến trúc</a>
-                <a href="#vi-tri" class="mobile-link text-white/50 hover:text-[#D4AF37] transition-colors">Vị trí</a>
-                <a href="#bang-gia" class="mobile-link text-white/50 hover:text-[#D4AF37] transition-colors">Bảng giá</a>
-                <button class="mt-8 border border-[#D4AF37] text-[#D4AF37] px-8 py-4 text-[11px] tracking-widest uppercase hover:bg-[#D4AF37] hover:text-[#1A1817] transition-colors">Đăng Ký Ngay</button>
+                <a href="#tong-quan" class="text-white hover:text-[#D4AF37] transition-colors mobile-link">개요</a>
+                <a href="#phoi-canh" class="text-white hover:text-[#D4AF37] transition-colors mobile-link">건축</a>
+                <a href="#vi-tri" class="text-white hover:text-[#D4AF37] transition-colors mobile-link">위치</a>
+                <a href="#bang-gia" class="text-white hover:text-[#D4AF37] transition-colors mobile-link">가격</a>
+                <button class="mt-8 border border-[#D4AF37] text-[#D4AF37] px-8 py-4 text-[11px] tracking-widest uppercase hover:bg-[#D4AF37] hover:text-[#1A1817] transition-colors">지금 등록</button>
             </div>
         </div>
 
@@ -88,21 +89,21 @@ import Layout from '../layouts/Layout.astro';
             <!-- Left Text Column -->
             <div class="w-full lg:w-1/2 lg:flex-1 flex flex-col justify-center px-8 lg:px-24 py-16 lg:py-0 relative z-10 order-2 lg:order-1">
                 <p class="text-[#D4AF37] tracking-[0.4em] text-[10px] font-bold uppercase mb-8 flex items-center gap-4">
-                    <span class="w-8 h-[2px] bg-[#D4AF37]"></span> Chuẩn Mực Mới
+                    <span class="w-8 h-[2px] bg-[#D4AF37]"></span> 새로운 기준
                 </p>
                 <h1 class="font-sans text-white text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.05] font-light tracking-tight mb-8">
-                    Khởi Nguồn <br />
-                    <span class="font-serif italic text-[#8B5A2B]">Đẳng Cấp</span>
+                    우아함의 <br />
+                    <span class="font-serif italic text-[#8B5A2B]">기원</span>
                 </h1>
                 <p class="text-white/40 text-sm font-light leading-relaxed max-w-md mb-12">
-                    76 Trần Hưng Đạo, thành phố biển Quy Nhơn. Sự kết hợp hoàn mỹ giữa tiện ích 5 sao và không gian sống giới hạn biệt lập.
+                    76 쩐흥다오, 꾸이년 해안 도시. 5성급 편의시설과 제한된 프라이빗 주거 공간의 완벽한 조화.
                 </p>
                 <div class="flex items-center gap-8">
                     <button class="bg-white text-[#1A1817] px-8 py-4 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-[#D4AF37] transition-colors">
-                        Tham Quan
+                        방문하기
                     </button>
                     <a href="#phoi-canh" class="text-white/60 text-xs tracking-widest uppercase hover:text-white flex items-center gap-2 group transition-colors">
-                        Khám Phá <span class="group-hover:translate-x-2 transition-transform">→</span>
+                        둘러보기 <span class="group-hover:translate-x-2 transition-transform">→</span>
                     </a>
                 </div>
             </div>
@@ -118,35 +119,35 @@ import Layout from '../layouts/Layout.astro';
                 <!-- Box Stats overlay -->
                 <div class="absolute bottom-12 right-12 bg-white/10 backdrop-blur-xl border border-white/20 p-6 hidden md:block group hover:bg-white/20 transition-colors cursor-default">
                     <p class="font-serif text-3xl text-white mb-1 group-hover:scale-110 origin-left transition-transform">100%</p>
-                    <p class="text-[9px] uppercase tracking-[0.2em] text-[#D4AF37]">Hướng Biển Đông</p>
+                    <p class="text-[9px] uppercase tracking-[0.2em] text-[#D4AF37]">오션뷰</p>
                 </div>
             </div>
         </section>
 
-        <!-- Artistic Space Section -->
+        <!-- 예술적 공간 Section -->
         <section id="phoi-canh" class="py-32 lg:py-48 px-6 lg:px-16 bg-white relative">
             <div class="max-w-7xl mx-auto">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-stretch">
                     <!-- Text Block -->
                     <div class="flex flex-col justify-center">
                         <p class="text-[#D4AF37] tracking-[0.4em] text-[10px] font-bold uppercase mb-8 flex items-center gap-4">
-                            <span class="w-8 h-[2px] bg-[#D4AF37]"></span> Không Gian Nghệ Thuật
+                            <span class="w-8 h-[2px] bg-[#D4AF37]"></span> 예술적 공간
                         </p>
                         <h2 class="font-sans text-5xl lg:text-[4rem] text-[#1A1817] leading-[1.1] tracking-tight mb-10 font-light">
-                            Triết Lý <br />
-                            <span class="font-serif italic text-[#D4AF37] pr-2">Tối Giản</span>
+                            미니멀리스트 <br />
+                            <span class="font-serif italic text-[#D4AF37] pr-2">철학</span>
                         </h2>
                         <p class="text-[#1A1817]/60 leading-relaxed font-light mb-16 text-sm lg:text-base max-w-md">
-                            Khước từ những chi tiết rườm rà, thiết kế tại Altara đề cao tỷ lệ nguyên bản, ánh sáng tự nhiên và những vật liệu thượng hạng nhất để tạo ra một bản giao hưởng tĩnh tại.
+                            불필요한 디테일을 배제하고 근본적인 비율, 자연 채광 그리고 최고급 자재를 돋보이게 하여 평온한 주거 공간의 교향곡을 완성합니다.
                         </p>
                         <div class="flex gap-16 border-t border-[#1A1817]/10 pt-8">
                             <div>
                                 <h4 class="font-serif text-4xl text-[#1A1817] mb-2">479</h4>
-                                <p class="text-[9px] uppercase tracking-[0.2em] text-[#1A1817]/40 font-bold">Phiên Bản Giới Hạn</p>
+                                <p class="text-[9px] uppercase tracking-[0.2em] text-[#1A1817]/40 font-bold">한정판 특별 세대</p>
                             </div>
                             <div>
                                 <h4 class="font-serif text-4xl text-[#1A1817] mb-2">100<span class="text-xl">%</span></h4>
-                                <p class="text-[9px] uppercase tracking-[0.2em] text-[#1A1817]/40 font-bold">Tầm Nhìn Trực Diện Biển</p>
+                                <p class="text-[9px] uppercase tracking-[0.2em] text-[#1A1817]/40 font-bold">Direct 오션뷰</p>
                             </div>
                         </div>
                     </div>
@@ -156,7 +157,7 @@ import Layout from '../layouts/Layout.astro';
                         <!-- Main Image -->
                         <div class="col-span-2 row-span-1 border border-[#D4AF37]/20 relative overflow-hidden bg-black">
                             <img src="/photos/5.jpg" alt="Luxury Living" class="w-full h-full object-cover transform scale-105 hover:scale-110 transition-transform duration-1000 ease-out opacity-90 hover:opacity-100" />
-                            <div class="absolute bottom-6 left-6 text-white font-serif italic text-xl drop-shadow-md">Living Space.</div>
+                            <div class="absolute bottom-6 left-6 text-white font-serif italic text-xl drop-shadow-md">생활 공간.</div>
                         </div>
                         <!-- Bottom Images -->
                         <div class="col-span-1 row-span-1 border border-[#D4AF37]/20 relative overflow-hidden bg-black">
@@ -170,7 +171,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </section>
 
-        <!-- Location Section -->
+        <!-- 위치 Section -->
         <section id="vi-tri" class="py-32 lg:py-48 px-6 lg:px-16 bg-[#111] text-white overflow-hidden relative">
             <!-- Background element -->
             <div class="absolute top-0 right-0 w-1/3 h-full bg-[#1A1817] -skew-x-12 translate-x-32 hidden lg:block"></div>
@@ -178,10 +179,10 @@ import Layout from '../layouts/Layout.astro';
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20 items-center relative z-10">
                 <div class="lg:col-span-5 order-2 lg:order-1 relative group">
                     <div class="absolute inset-0 border border-[#D4AF37]/30 translate-x-4 translate-y-4 transition-transform duration-500 group-hover:translate-x-6 group-hover:translate-y-6"></div>
-                    <img src="/photos/6.jpg" alt="Location Map" class="relative z-10 w-full aspect-[4/5] object-cover grayscale opacity-70 mix-blend-luminosity hover:opacity-100 hover:grayscale-0 transition-all duration-700" />
+                    <img src="/photos/6.jpg" alt="위치 Map" class="relative z-10 w-full aspect-[4/5] object-cover grayscale opacity-70 mix-blend-luminosity hover:opacity-100 hover:grayscale-0 transition-all duration-700" />
                     <div class="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
                         <div class="bg-black/40 backdrop-blur-md px-8 py-6 border-l-[3px] border-[#D4AF37]">
-                            <span class="font-sans text-xl md:text-2xl tracking-[0.2em] font-light uppercase">76 Trần Hưng Đạo</span>
+                            <span class="font-sans text-xl md:text-2xl tracking-[0.2em] font-light uppercase">76 Tran Hung Dao</span>
                         </div>
                     </div>
                 </div>
@@ -190,34 +191,34 @@ import Layout from '../layouts/Layout.astro';
 
                 <div class="lg:col-span-6 order-1 lg:order-2">
                     <p class="text-[#D4AF37] tracking-[0.4em] text-[10px] font-bold uppercase mb-8 flex items-center gap-4">
-                        <span class="w-8 h-[2px] bg-[#D4AF37]"></span> Vị Trí Độc Tôn
+                        <span class="w-8 h-[2px] bg-[#D4AF37]"></span> Prime 위치
                     </p>
                     <h2 class="font-sans text-4xl lg:text-[4rem] leading-[1.1] font-light tracking-tight mb-16">
-                        Giao Lộ <br/><span class="font-serif italic text-white/50">Của Những Tinh Hoa</span>
+                        엘리트들의 <br/><span class="font-serif italic text-white/50">교차로</span>
                     </h2>
                     
                     <div class="space-y-10">
                         <div class="group flex gap-8 items-start hover:-translate-y-1 transition-transform cursor-default">
                             <span class="font-sans text-4xl text-[#D4AF37] opacity-60 font-light group-hover:opacity-100 transition-opacity">01</span>
                             <div>
-                                <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-2">1 Phút Đến Sóng Biển Lớn</h4>
-                                <p class="text-white/40 font-light text-sm leading-relaxed max-w-sm">Bước chân rời khỏi cánh cửa là không gian biển ngát xanh, tiếng sóng vỗ và bãi cát mịn màng.</p>
+                                <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-2">파도까지 단 1분</h4>
+                                <p class="text-white/40 font-light text-sm leading-relaxed max-w-sm">문 밖을 나서면 끝없이 펼쳐진 푸른 지평선, 파도 소리, 부드러운 모래사장을 바로 만날 수 있습니다.</p>
                             </div>
                         </div>
                         <div class="w-full h-[1px] bg-white/10 mix-blend-overlay"></div>
                         <div class="group flex gap-8 items-start hover:-translate-y-1 transition-transform cursor-default">
                             <span class="font-sans text-4xl text-[#D4AF37] opacity-60 font-light group-hover:opacity-100 transition-opacity">03</span>
                             <div>
-                                <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-2">3 Phút Đến Quảng Trường</h4>
-                                <p class="text-white/40 font-light text-sm leading-relaxed max-w-sm">Giao điểm của văn hóa, sự kiện và nghệ thuật với quảng trường trung tâm tỉnh rộng lớn.</p>
+                                <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-2">시청 광장까지 3분</h4>
+                                <p class="text-white/40 font-light text-sm leading-relaxed max-w-sm">화려한 도 광장에서 펼쳐지는 문화, 주요 행사 및 경이로운 예술 축제의 중심지입니다.</p>
                             </div>
                         </div>
                         <div class="w-full h-[1px] bg-white/10 mix-blend-overlay"></div>
                         <div class="group flex gap-8 items-start hover:-translate-y-1 transition-transform cursor-default">
                             <span class="font-sans text-4xl text-[#D4AF37] opacity-60 font-light group-hover:opacity-100 transition-opacity">05</span>
                             <div>
-                                <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-2">5 Phút Kết Nối Tiện Ích</h4>
-                                <p class="text-white/40 font-light text-sm leading-relaxed max-w-sm">Lên xe vào trung tâm kết nối nhanh chóng đến Bệnh viện tiêu chuẩn quốc tế và Hệ thống trường học danh tiếng.</p>
+                                <h4 class="text-sm font-bold uppercase tracking-[0.1em] mb-2">5분 거리의 편의성</h4>
+                                <p class="text-white/40 font-light text-sm leading-relaxed max-w-sm">국제 표준 병원 및 명문 교육 시스템과의 완벽하고 신속한 연결.</p>
                             </div>
                         </div>
                     </div>
@@ -225,38 +226,38 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </section>
 
-        <!-- Pricing Section -->
+        <!-- 가격 Section -->
         <section id="bang-gia" class="py-32 lg:py-48 px-6 lg:px-16 bg-[#F9F9F9]">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-20 lg:mb-32 gap-10">
                     <div>
                         <p class="text-[#D4AF37] tracking-[0.4em] text-[10px] font-bold uppercase mb-6 flex items-center gap-4">
-                            <span class="w-8 h-[2px] bg-[#D4AF37]"></span> Đầu Tư Bền Vững
+                            <span class="w-8 h-[2px] bg-[#D4AF37]"></span> 지속 가능한 투자
                         </p>
-                        <h2 class="font-sans text-4xl lg:text-[4rem] text-[#1A1817] leading-none font-light tracking-tight">Tuyệt Tác Xứng Tầm</h2>
+                        <h2 class="font-sans text-4xl lg:text-[4rem] text-[#1A1817] leading-none font-light tracking-tight">가치 있는 걸작</h2>
                     </div>
-                    <p class="font-serif text-[#1A1817]/40 text-2xl lg:text-3xl italic tracking-wide">Giá Trị Thăng Hoa</p>
+                    <p class="font-serif text-[#1A1817]/40 text-2xl lg:text-3xl italic tracking-wide">가치 상승</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 border border-[#1A1817]/10 bg-white">
                     <!-- Unit: 1BR -->
                     <div class="p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-[#1A1817]/10 hover:bg-[#FAF9F6] transition-colors group flex flex-col">
-                        <p class="text-[#D4AF37] text-[9px] uppercase tracking-[0.2em] font-bold mb-8">Sở hữu vĩnh viễn</p>
-                        <h3 class="font-sans text-2xl text-[#1A1817] font-light mb-10 uppercase tracking-widest">1 Phòng Ngủ</h3>
+                        <p class="text-[#D4AF37] text-[9px] uppercase tracking-[0.2em] font-bold mb-8">영구 소유권</p>
+                        <h3 class="font-sans text-2xl text-[#1A1817] font-light mb-10 uppercase tracking-widest">1베드룸</h3>
                         
                         <div class="mb-12">
-                            <span class="text-xs uppercase tracking-[0.2em] text-[#1A1817]/40 block mb-2">Giá từ</span>
-                            <div class="font-serif text-5xl text-[#1A1817]">1.8 <span class="text-xl font-sans font-light">Tỷ</span></div>
+                            <span class="text-xs uppercase tracking-[0.2em] text-[#1A1817]/40 block mb-2">시작가:</span>
+                            <div class="font-serif text-5xl text-[#1A1817]">1.8 <span class="text-xl font-sans font-light">십억 (VND)</span></div>
                         </div>
 
                         <ul class="space-y-5 text-xs tracking-[0.1em] text-[#1A1817]/60 uppercase mb-16 flex-1">
-                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Diện tích 45m²</li>
-                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Thiết kế mở tối giản</li>
-                            <li class="flex items-center gap-4 opacity-40"><span class="w-[4px] h-[4px] bg-gray-400"></span> Tầm nhìn thoáng đạt</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> 크기: 45m²</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> 개방형 미니멀리스트 디자인</li>
+                            <li class="flex items-center gap-4 opacity-40"><span class="w-[4px] h-[4px] bg-gray-400"></span> 막힘없는 전망</li>
                         </ul>
 
                         <button class="w-full border border-[#1A1817]/20 text-[#1A1817] py-5 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-[#1A1817] hover:text-white transition-all">
-                            Nhận Báo Giá Đợt 1
+                            1차 견적 받기
                         </button>
                     </div>
 
@@ -264,46 +265,46 @@ import Layout from '../layouts/Layout.astro';
                     <div class="p-10 lg:p-14 bg-[#1A1817] text-white hover:bg-[#111] transition-colors border-b lg:border-b-0 lg:border-r border-[#1A1817] relative flex flex-col group transform lg:scale-105 lg:-mt-4 lg:mb-4 shadow-2xl z-10">
                         <div class="absolute top-0 left-0 w-full h-[2px] bg-[#D4AF37]"></div>
                         <p class="text-[#D4AF37] text-[9px] uppercase tracking-[0.2em] font-bold mb-8 flex justify-between items-center">
-                            Giới Tinh Hoa
+                            엘리트 컬렉션
                             <span class="px-2 py-1 bg-[#D4AF37]/20 text-[#D4AF37] border border-[#D4AF37]/50 tracking-widest">HOT</span>
                         </p>
-                        <h3 class="font-sans text-2xl text-white font-light mb-10 uppercase tracking-widest">2 Phòng Ngủ</h3>
+                        <h3 class="font-sans text-2xl text-white font-light mb-10 uppercase tracking-widest">2베드룸</h3>
                         
                         <div class="mb-12">
-                            <span class="text-xs uppercase tracking-[0.2em] text-white/40 block mb-2">Giá từ</span>
-                            <div class="font-serif text-5xl text-[#D4AF37]">2.5 <span class="text-xl font-sans font-light text-white">Tỷ</span></div>
+                            <span class="text-xs uppercase tracking-[0.2em] text-white/40 block mb-2">시작가:</span>
+                            <div class="font-serif text-5xl text-[#D4AF37]">2.5 <span class="text-xl font-sans font-light text-white">십억 (VND)</span></div>
                         </div>
 
                         <ul class="space-y-5 text-xs tracking-[0.1em] text-white/70 uppercase mb-16 flex-1">
-                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Diện tích 75m²</li>
-                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Ban công siêu rộng</li>
-                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Mở View Biển Đông ngát hương</li>
-                            <li class="flex items-center gap-4 text-[#D4AF37]"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Sinh lời đảm bảo 8%</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> 크기: 75m²</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> 초광폭 발코니</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Panoramic 오션뷰</li>
+                            <li class="flex items-center gap-4 text-[#D4AF37]"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> 연 8% 수익 보장</li>
                         </ul>
 
                         <button class="w-full bg-[#D4AF37] text-[#1A1817] py-5 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white transition-all">
-                            Tư Vấn Ưu Đãi Nội Bộ
+                            단독 상담 신청
                         </button>
                     </div>
 
                     <!-- Unit: Penthouse -->
                     <div class="p-10 lg:p-14 hover:bg-[#FAF9F6] transition-colors group flex flex-col">
-                        <p class="text-[#1A1817]/40 text-[9px] uppercase tracking-[0.2em] font-bold mb-8">Bản Giới Hạn</p>
+                        <p class="text-[#1A1817]/40 text-[9px] uppercase tracking-[0.2em] font-bold mb-8">리미티드 에디션</p>
                         <h3 class="font-sans text-2xl text-[#1A1817] font-light mb-10 uppercase tracking-widest">Penthouse</h3>
                         
                         <div class="mb-12">
-                            <span class="text-xs uppercase tracking-[0.2em] text-[#1A1817]/40 block mb-2">Suất NỘI BỘ</span>
-                            <div class="font-serif text-3xl md:text-4xl text-[#1A1817] mt-3">Liên Hệ Trực Tiếp</div>
+                            <span class="text-xs uppercase tracking-[0.2em] text-[#1A1817]/40 block mb-2">내부 할당 (비공개)</span>
+                            <div class="font-serif text-3xl md:text-4xl text-[#1A1817] mt-3">직접 문의</div>
                         </div>
 
                         <ul class="space-y-5 text-xs tracking-[0.1em] text-[#1A1817]/60 uppercase mb-16 flex-1">
-                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Diện tích > 150m²</li>
-                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Đặc quyền cá nhân VIP</li>
-                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> Tiện nghi hoàng gia đẳng cấp</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> 면적 > 150m²</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> VIP 특권 제공</li>
+                            <li class="flex items-center gap-4"><span class="w-[4px] h-[4px] bg-[#D4AF37]"></span> 황실급 편의시설</li>
                         </ul>
 
                         <button class="w-full border border-[#1A1817]/20 text-[#1A1817] py-5 text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-[#1A1817] hover:text-white transition-all mt-auto">
-                            Thiết Lập Cuộc Hẹn
+                            예약 설정
                         </button>
                     </div>
                 </div>
@@ -317,39 +318,39 @@ import Layout from '../layouts/Layout.astro';
                     <div class="lg:col-span-4">
                         <h2 class="font-serif text-3xl tracking-[0.2em] uppercase mb-8 text-white">Altara</h2>
                         <p class="text-white/50 font-light leading-relaxed text-sm lg:w-3/4">
-                            Kiến tạo chuẩn mực sống thượng lưu tại vịnh biển Quy Nhơn. Nơi hội tụ tinh hoa trải nghiệm với phong cách sống đẳng cấp mang đậm dấu ấn cá nhân.
+                            꾸이년 만에서 궁극의 럭셔리 라이프스타일을 확립합니다. 세계적인 수준의 경험과 개인화된 특권의 엘리트 융합.
                         </p>
                     </div>
                     <div class="lg:col-span-3">
-                        <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#D4AF37] mb-8">Kết Nối Với Chúng Tôi</h4>
+                        <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#D4AF37] mb-8">연결하기</h4>
                         <ul class="space-y-5 text-sm text-white/70 font-light">
-                            <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">T.</span> 094 838 5566</li>
+                            <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">P.</span> 094 838 5566</li>
                             <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">E.</span> tuongnm@gmail.com</li>
-                            <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">A.</span> 76 Trần Hưng Đạo, Quy Nhơn</li>
+                            <li class="hover:text-white transition-colors"><span class="opacity-50 inline-block w-8 font-serif">A.</span> 76 Tran Hung Dao, Quy Nhon</li>
                         </ul>
                     </div>
                     <div class="lg:col-span-5 flex flex-col items-start lg:items-end">
-                        <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#D4AF37] mb-8">Nhận Thư Mời VIP</h4>
+                        <h4 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#D4AF37] mb-8">VIP 초대장 받기</h4>
                         <form action="https://formsubmit.co/tuongnm@gmail.com" method="POST" class="flex w-full max-w-sm border-b border-white/30 pb-3 hover:border-white transition-colors focus-within:border-white">
-                            <input type="hidden" name="_subject" value="[Altara] Đăng ký nhận bản tin VIP">
+                            <input type="hidden" name="_subject" value="[Altara] Đăng ký nhận bản tin VIP (EN)">
                             <input type="hidden" name="_captcha" value="false">
-                            <input type="email" name="email" required placeholder="Nhập email của bạn" class="bg-transparent border-none outline-none text-white placeholder-white/30 text-sm flex-1 font-light" />
-                            <button type="submit" class="text-[10px] font-bold uppercase tracking-[0.2em] hover:text-[#D4AF37] transition-colors ml-4">Gửi</button>
+                            <input type="email" name="email" required placeholder="이메일을 입력하세요" class="bg-transparent border-none outline-none text-white placeholder-white/30 text-sm flex-1 font-light" />
+                            <button type="submit" class="text-[10px] font-bold uppercase tracking-[0.2em] hover:text-[#D4AF37] transition-colors ml-4">보내기</button>
                         </form>
                     </div>
                 </div>
                 
                 <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-white/40 font-light tracking-[0.1em] gap-6">
-                    <p>&copy; 2026 ALTARA RESIDENCES. ALL RIGHTS RESERVED.</p>
+                    <p>&copy; 2026 ALTARA RESIDENCES. 모든 권리 보유.</p>
                     <div class="flex gap-8">
-                        <a href="#" class="hover:text-white transition-colors">CHÍNH SÁCH BẢO MẬT</a>
-                        <a href="#" class="hover:text-white transition-colors">ĐIỀU KHOẢN DỊCH VỤ</a>
+                        <a href="#" class="hover:text-white transition-colors">개인 정보 보호 정책</a>
+                        <a href="#" class="hover:text-white transition-colors">서비스 약관</a>
                     </div>
                 </div>
             </div>
         </footer>
 
-        <!-- Registration Modal -->
+        <!-- 등록 Modal -->
         <div id="registerModal" class="fixed inset-0 z-[150] flex items-center justify-center opacity-0 pointer-events-none transition-all duration-500 p-4 lg:p-0">
             <!-- Backdrop -->
             <div class="absolute inset-0 bg-[#1A1817]/90 backdrop-blur-sm modal-backdrop transition-opacity"></div>
@@ -374,39 +375,39 @@ import Layout from '../layouts/Layout.astro';
                 <!-- Right Form -->
                 <div class="w-full md:w-3/5 p-8 md:p-14 lg:p-16 flex flex-col justify-center">
                     <p class="text-[#D4AF37] tracking-[0.4em] text-[9px] font-bold uppercase mb-4 flex items-center gap-3">
-                        <span class="w-6 h-[2px] bg-[#D4AF37]"></span> Nhận Tư Vấn
+                        <span class="w-6 h-[2px] bg-[#D4AF37]"></span> 상담 받기
                     </p>
-                    <h3 class="font-sans text-3xl text-[#1A1817] font-light tracking-tight mb-2">Thông Tin <span class="font-serif italic text-[#D4AF37] pr-1">Liên Hệ</span></h3>
-                    <p class="text-[#1A1817]/60 text-xs mb-8 leading-relaxed font-light">Chuyên viên tư vấn cao cấp của chúng tôi sẽ liên hệ trong thời gian sớm nhất để tư vấn trực tiếp.</p>
+                    <h3 class="font-sans text-3xl text-[#1A1817] font-light tracking-tight mb-2">등록 <span class="font-serif italic text-[#D4AF37] pr-1">정보</span></h3>
+                    <p class="text-[#1A1817]/60 text-xs mb-8 leading-relaxed font-light">알타라의 수석 컨설턴트가 독점적인 세부 정보를 제공하기 위해 직접 연락을 드릴 것입니다.</p>
                     
-                    <form id="vipRegisterForm" class="space-y-5">
-                        <input type="hidden" name="_subject" value="[Altara] Yêu cầu tư vấn VIP">
+                    <form id="vip등록Form" class="space-y-5">
+                        <input type="hidden" name="_subject" value="[Altara] Yêu cầu tư vấn VIP (EN)">
                         <input type="hidden" name="_captcha" value="false">
                         <div>
-                            <label class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1817] mb-2">Họ và tên *</label>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1817] mb-2">성명 *</label>
                             <input type="text" name="name" required class="w-full bg-[#f9f9f9] border border-gray-200 focus:border-[#D4AF37] focus:bg-white transition-colors outline-none text-[#1A1817] text-sm px-4 py-3" />
                         </div>
                         <div>
-                            <label class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1817] mb-2">Số điện thoại *</label>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1817] mb-2">전화번호 *</label>
                             <input type="tel" name="phone" required class="w-full bg-[#f9f9f9] border border-gray-200 focus:border-[#D4AF37] focus:bg-white transition-colors outline-none text-[#1A1817] text-sm px-4 py-3" />
                         </div>
                         <div>
-                            <label class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1817] mb-2">Email *</label>
+                            <label class="block text-[10px] font-bold uppercase tracking-widest text-[#1A1817] mb-2">이메일 주소 *</label>
                             <input type="email" name="email" required class="w-full bg-[#f9f9f9] border border-gray-200 focus:border-[#D4AF37] focus:bg-white transition-colors outline-none text-[#1A1817] text-sm px-4 py-3" />
                         </div>
                         
                         <button id="submitBtn" type="submit" class="w-full bg-[#1A1817] text-white py-4 mt-4 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#D4AF37] hover:text-[#1A1817] transition-all duration-500">
-                            Gửi Yêu Cầu
+                            요청 제출
                         </button>
                     </form>
 
                     <!-- Success Message -->
                     <div id="successMessage" class="hidden flex-col items-center justify-center text-center py-8 animate-[fadeIn_0.5s_ease-out]">
                         <svg class="w-16 h-16 text-[#D4AF37] mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <h4 class="font-sans text-3xl text-[#1A1817] font-light mb-4">Đăng Ký Thành Công</h4>
-                        <p class="text-[#1A1817]/60 text-sm font-light mb-8 max-w-sm">Chúng tôi sẽ tiếp nhận thông tin và liên hệ với quý khách trong thời gian sớm nhất.</p>
+                        <h4 class="font-sans text-3xl text-[#1A1817] font-light mb-4">등록 Successful</h4>
+                        <p class="text-[#1A1817]/60 text-sm font-light mb-8 max-w-sm">감사합니다. 귀하의 요청을 검토한 후 즉시 연락드리겠습니다.</p>
                         <button type="button" class="close-modal bg-[#1A1817] text-white px-10 py-4 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-[#D4AF37] hover:text-[#1A1817] transition-all duration-300">
-                            Đóng Lại
+                            창 닫기
                         </button>
                     </div>
                 </div>
@@ -484,7 +485,7 @@ import Layout from '../layouts/Layout.astro';
             });
         }
 
-        // --- Registration Modal Logic ---
+        // --- 등록 Modal Logic ---
         const registerModal = document.getElementById("registerModal");
         const modalPanel = registerModal?.querySelector(".modal-panel");
         const closeBtns = document.querySelectorAll(".close-modal, .modal-backdrop");
@@ -535,7 +536,7 @@ import Layout from '../layouts/Layout.astro';
         }
 
         // --- AJAX Form Submission Logic ---
-        const vipForm = document.getElementById("vipRegisterForm");
+        const vipForm = document.getElementById("vip등록Form");
         const successMsg = document.getElementById("successMessage");
         const submitBtn = document.getElementById("submitBtn");
 
@@ -545,7 +546,7 @@ import Layout from '../layouts/Layout.astro';
                 const formData = new FormData(vipForm);
                 const data = Object.fromEntries(formData.entries());
                 
-                submitBtn.innerHTML = "Đang gửi...";
+                submitBtn.innerHTML = "Sending...";
                 submitBtn.classList.add("opacity-50", "pointer-events-none");
 
                 fetch("https://formsubmit.co/ajax/tuongnm@gmail.com", {
@@ -564,9 +565,9 @@ import Layout from '../layouts/Layout.astro';
                 })
                 .catch(error => {
                     console.log(error);
-                    submitBtn.innerHTML = "Lỗi. Vui lòng thử lại!";
+                    submitBtn.innerHTML = "Error. Please try again!";
                     setTimeout(() => {
-                        submitBtn.innerHTML = "Gửi Yêu Cầu";
+                        submitBtn.innerHTML = "요청 제출";
                         submitBtn.classList.remove("opacity-50", "pointer-events-none");
                     }, 3000);
                 });
